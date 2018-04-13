@@ -1,0 +1,68 @@
+<Solution>
+  <PropertyGroup Name="Tarot" Version="3.10.0.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Folder Name="fonts">
+          <TTF Name="simhei.ttf" />
+          <TTF Name="STHUPO.TTF" />
+        </Folder>
+        <Folder Name="Photos">
+          <Folder Name="Button">
+            <Image Name="3DBUTTONLARGE_NORMAL.png" />
+            <Image Name="3DBUTTONLARGE_SELECTED.png" />
+            <Image Name="3DBUTTONLITTLESMALL_NORMAL.png" />
+            <Image Name="3DBUTTONLITTLESMALL_SELECTED.png" />
+            <Image Name="3DBUTTONMEDIUM_NORMAL.png" />
+            <Image Name="3DBUTTONMEDIUM_SELECTED.png" />
+            <Image Name="3DBUTTONSMALL_NORMAL.png" />
+            <Image Name="3DBUTTONSMALL_SELECTED.png" />
+            <Image Name="add_button_48px.png" />
+            <Image Name="CloseNormal.png" />
+            <Image Name="CloseSelected.png" />
+            <Image Name="delete_button_48px.png" />
+          </Folder>
+          <Folder Name="Tarot">
+            <Folder Name="TarotLarge">
+              <Image Name="000FOOL.jpg" />
+              <Image Name="001MAGICIAN.jpg" />
+              <Image Name="002HIGHPRIESTESS.jpg" />
+              <Image Name="003EMPRESS.jpg" />
+              <Image Name="004EMPEROR.jpg" />
+              <Image Name="005HIGHPRIEST.jpg" />
+              <Image Name="006LOVERS.jpg" />
+              <Image Name="007CHARIOT.jpg" />
+              <Image Name="008STRENGTH.jpg" />
+              <Image Name="009HERMIT.jpg" />
+              <Image Name="010WHEELOFFORTUNE.jpg" />
+              <Image Name="011JUSTICE.jpg" />
+              <Image Name="012HANGEDMAN.jpg" />
+              <Image Name="013DEATH.jpg" />
+              <Image Name="014TEMPERANCE.jpg" />
+              <Image Name="015DEVIL.jpg" />
+              <Image Name="016TOWER.jpg" />
+              <Image Name="017STAR.jpg" />
+              <Image Name="018MOON.jpg" />
+              <Image Name="019SUN.jpg" />
+              <Image Name="020JUDGEMENT.jpg" />
+              <Image Name="021WORLD.jpg" />
+              <Image Name="9.png" />
+            </Folder>
+            <Image Name="TAROTBACK.png" />
+          </Folder>
+          <Image Name="14.png" />
+          <Image Name="HelloWorld.png" />
+          <Image Name="TAROTBACKGROUND.jpg" />
+          <Image Name="TAROTWELCOME.jpg" />
+        </Folder>
+        <Project Name="Answer.csd" Type="Scene" />
+        <Project Name="Begin.csd" Type="Scene" />
+        <Project Name="Choice.csd" Type="Scene" />
+        <Project Name="End.csd" Type="Scene" />
+        <Project Name="Shuffle1.csd" Type="Scene" />
+        <Project Name="Shuffle2.csd" Type="Scene" />
+        <Project Name="Welcome.csd" Type="Scene" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>
