@@ -42,6 +42,7 @@ function Answer3:onCreate()
                     local TarotNum = AnswerTarotTable[2]["TarotNum"]
                     local ChangeTexture = cc.Director:getInstance():getTextureCache():addImage(Tarot_Photo[TarotNum]["Tarot_Photo"])
                     local rectSprite = cc.Sprite:create(Tarot_Photo[0]["Tarot_Photo"])
+--                   local rect = cc.rect(0, 0, AnswerTarotTable[2]["TarotSprite"]:getContentSize().width, AnswerTarotTable[1]["TarotSprite"]:getContentSize().height)
                     AnswerTarotTable[2]["TarotSprite"]:setTexture(ChangeTexture)
                     AnswerTarotTable[2]["TarotSprite"]:setTextureRect(rectSprite:getTextureRect())
                     AnswerTarotTable[2]["TarotSprite"]:setScale(0.8)
@@ -58,24 +59,30 @@ function Answer3:onCreate()
 
               if DIVINE == LIFE then
                   if AnswerTarotTable[2]["UprightOrDownright"] == 1 then
+--                    Label_Tarot_Answer = cc.Label:createWithTTF(Tarot_Content[TarotNum]["Tarot_Life_UpRight"], "fonts/simhei.ttf", TITLE_FONT_SIZE_LITTLESMALL, cc.size(0,0), cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER)
                       Label_Tarot_Answer = Tarot_Content[TarotNum]["Tarot_Mean"].."\n\n"..Tarot_Content[TarotNum]["Tarot_Life_UpRight"]
                   elseif AnswerTarotTable[2]["UprightOrDownright"] == 0 then
+--                    Label_Tarot_Answer = cc.Label:createWithTTF(Tarot_Content[TarotNum]["Tarot_Life_DownRight"], "fonts/simhei.ttf", TITLE_FONT_SIZE_LITTLESMALL, cc.size(0,0), cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER)
                       Label_Tarot_Answer = Tarot_Content[TarotNum]["Tarot_Mean"].."\n\n"..Tarot_Content[TarotNum]["Tarot_Life_DownRight"]
                   end
               end
 
               if DIVINE == ENTERPRISE then
                   if AnswerTarotTable[2]["UprightOrDownright"] == 1 then
+--                    Label_Tarot_Answer = cc.Label:createWithTTF(Tarot_Content[TarotNum]["Tarot_Enterprise_UpRight"], "fonts/simhei.ttf", TITLE_FONT_SIZE_LITTLESMALL, cc.size(0,0), cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER)
                       Label_Tarot_Answer = Tarot_Content[TarotNum]["Tarot_Mean"].."\n\n"..Tarot_Content[TarotNum]["Tarot_Enterprise_UpRight"]
                   elseif AnswerTarotTable[2]["UprightOrDownright"] == 0 then
+--                    Label_Tarot_Answer = cc.Label:createWithTTF(Tarot_Content[TarotNum]["Tarot_Enterprise_DownRight"], "fonts/simhei.ttf", TITLE_FONT_SIZE_LITTLESMALL, cc.size(0,0), cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER)
                       Label_Tarot_Answer = Tarot_Content[TarotNum]["Tarot_Mean"].."\n\n"..Tarot_Content[TarotNum]["Tarot_Enterprise_DownRight"]
                   end
               end
 
               if DIVINE == LOVE then
                   if AnswerTarotTable[2]["UprightOrDownright"] == 1 then
+--                    Label_Tarot_Answer = cc.Label:createWithTTF(Tarot_Content[TarotNum]["Tarot_Love_UpRight"], "fonts/simhei.ttf", TITLE_FONT_SIZE_LITTLESMALL, cc.size(0,0), cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER)
                       Label_Tarot_Answer = Tarot_Content[TarotNum]["Tarot_Mean"].."\n\n"..Tarot_Content[TarotNum]["Tarot_Love_UpRight"]
                   elseif AnswerTarotTable[2]["UprightOrDownright"] == 0 then
+--                    Label_Tarot_Answer = cc.Label:createWithTTF(Tarot_Content[TarotNum]["Tarot_Love_DownRight"], "fonts/simhei.ttf", TITLE_FONT_SIZE_LITTLESMALL, cc.size(0,0), cc.TEXT_ALIGNMENT_LEFT, cc.VERTICAL_TEXT_ALIGNMENT_CENTER)
                       Label_Tarot_Answer = Tarot_Content[TarotNum]["Tarot_Mean"].."\n\n"..Tarot_Content[TarotNum]["Tarot_Love_DownRight"]
                   end
               end
@@ -108,10 +115,12 @@ function Answer3:onCreate()
             if cc.rectContainsPoint(rect,locationInNode) then
             touchBeginPoint = {x = location.x, y = location.y}
             cclog("onTouchBegan: %0.2f, %0.2f", location.x, location.y)
-
+----
             EventDispatcher:removeEventListener(ListenerTable[0])
 
             --Tarot·­Ãæ
+--            local AnswerTarotMove = cc.MoveTo:create(1.0,cc.p(ORIGIN.x + WIN_SIZE.width*7/10, ORIGIN.y + WIN_SIZE.height*7/10))
+
             local ScaleTime = 0.1
             local ScaleLarge = 1.2
             local ScaleSmall = 1.0
@@ -148,7 +157,7 @@ function Answer3:onCreate()
         end
 
         local Listener = cc.EventListenerTouchOneByOne:create()
-
+----
         ListenerTable[0] = Listener
         Listener:registerScriptHandler(onTouchBegan,cc.Handler.EVENT_TOUCH_BEGAN )
         Listener:registerScriptHandler(onTouchMoved,cc.Handler.EVENT_TOUCH_MOVED )

@@ -406,7 +406,7 @@ end
         end
 
         local ExitItem = cc.MenuItemImage:create("Photos/Button/CloseNormal.png", "Photos/Button/CloseSelected.png")
-        ExitItem:setPosition(ORIGIN.x + VISIBLE_SIZE.width - ExitItem:getContentSize().width/2, ORIGIN.y + ExitItem:getContentSize().height/2)
+        ExitItem:setPosition(ORIGIN.x + WIN_SIZE.width - ExitItem:getContentSize().width/2, ORIGIN.y + ExitItem:getContentSize().height/2)
         ExitItem:registerScriptTapHandler(ExitApp)
         local Menu = cc.Menu:create(ExitItem)
         Menu:setPosition(0,0)

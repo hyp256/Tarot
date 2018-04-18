@@ -49,7 +49,7 @@ function Choice:regDivineMenu()
                 AnswerTarotTable[4]["TarotNum"] = (a + b)%22
                 print(AnswerTarotTable[4]["TarotNum"])
                 AnswerTarotTable[4]["UprightOrDownright"] = 1
-
+----
                 AnswerTarotTable[4]["TarotSprite"] = TarotSpriteTable[ AnswerTarotTable[4]["TarotNum"] ]
 
                 ReplaceToAnswer1Scene()
@@ -75,13 +75,13 @@ end
         end
 
         for TableNum = 0,(TAROT_LAST - TAROT_FIRST) do
-
+----
             TarotSpriteTable[TableNum] = TarotSprite:create("Photos/Tarot/TAROTBACK.png")
 
 --圆的方程 (x-a)^2 + (y-b)^2 = r^2 ;(a,b)为圆心
             circle_x = WIN_SIZE.width*7/9
             circle_y =( (WIN_SIZE.width*1/3)^2 - (circle_x - WIN_SIZE.width/2)^2 )^0.5
-
+----
             TarotSpriteTable[TableNum]:setPosition(ORIGIN.x + circle_x, ORIGIN.y + circle_y)
             ChoiceTarotLayer:addChild(TarotSpriteTable[TableNum],(TAROT_LAST - TAROT_FIRST + 1) - TableNum)
 
@@ -94,7 +94,7 @@ end
             local MoveLeft = cc.MoveTo:create(1.0,p2)
             local ChoiceRotationCallFunc = cc.CallFunc:create(ChoiceRotation,cocosAngleTable[TableNum])
             local ChoiceAction = cc.Sequence:create(MoveLeft,ChoiceRotationCallFunc)
-
+----
             TarotSpriteTable[TableNum]:runAction(ChoiceAction)
         end
     end
@@ -173,7 +173,7 @@ end
             if AnswerTarotTable[3]["UprightOrDownright"] == 2 then
                 local TouchSprite = event:getCurrentTarget()
                 for i = 0,21 do
-
+----
                     if TarotSpriteTable[i] == TouchSprite then
                     EventDispatcher:removeEventListener(ListenerTable[i])
                     AnswerTarotTable[AnswerTarotTableNum]["TarotNum"] = TarotTable[i]["TarotNum"]
@@ -189,14 +189,14 @@ end
 
             if AnswerTarotTable[3]["UprightOrDownright"] ~= 2 then
                 for i = 0,21 do
-
+----                
+--                    EventDispatcher:removeEventListener(ListenerTable[i])
                 local MoveBack = cc.MoveTo:create(1.0,cc.p(ORIGIN.x + WIN_SIZE.width*8/9, ORIGIN.y + WIN_SIZE.height*2/9))
                 TarotSpriteTable[i]:runAction(MoveBack)
                 TarotSpriteTable[i]:setRotation(0)
                 print("Listener",i)
                 end
-                
-                cclog("Choice===============================================line139")
+                    cclog("Choice===============================================line139")
 
                 AnswerTarotTable[0]["TarotSprite"]:stopAllActions()
                 local Move0 = cc.MoveTo:create(1.0,cc.p(ORIGIN.x + WIN_SIZE.width*1/9, ORIGIN.y + WIN_SIZE.height/2))
@@ -230,7 +230,7 @@ end
         end
 
         local Listener = cc.EventListenerTouchOneByOne:create()
-
+----
         ListenerTable[0] = Listener
         Listener:registerScriptHandler(onTouchBegan,cc.Handler.EVENT_TOUCH_BEGAN )
         Listener:registerScriptHandler(onTouchMoved,cc.Handler.EVENT_TOUCH_MOVED )
@@ -239,7 +239,7 @@ end
         EventDispatcher:addEventListenerWithSceneGraphPriority(ListenerTable[0], TarotSpriteTable[0])
 
         for i = 1,21 do
-
+----
             ListenerTable[i] = Listener:clone()
             ListenerTable[i]:setSwallowTouches(true)
             EventDispatcher:addEventListenerWithSceneGraphPriority(ListenerTable[i], TarotSpriteTable[i])

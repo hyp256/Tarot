@@ -21,6 +21,7 @@ function Welcome:onCreate()
         local EventDispatcher = WelcomeTouchLayer:getEventDispatcher()
 
         local function ReplaceToBeginScene()
+--       self:removeAllChildren()
             self:getApp():enterScene("Begin/Begin")
         end
 

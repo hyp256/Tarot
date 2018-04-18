@@ -34,6 +34,7 @@ function Shuffle2:onCreate()
         end
 
         for TableNum = 0,(TAROT_LAST - TAROT_FIRST) do
+----
             TarotSpriteTable[TableNum] = TarotSprite:create("Photos/Tarot/TAROTBACK.png")
             TarotSpriteTable[TableNum]:setPosition(ORIGIN.x + WIN_SIZE.width*2/3, ORIGIN.y + WIN_SIZE.height*4/9)
             ShuffleTarotLayer:addChild(TarotSpriteTable[TableNum],(TAROT_LAST - TAROT_FIRST + 1) - TableNum)
@@ -48,6 +49,7 @@ function Shuffle2:onCreate()
             TarotSpriteTable[TableNum]:runAction(ShufflePart2Action)
         end
 
+--        return ShuffleTarotLayer
     end
 
 function Shuffle2:regDivineMenu()
@@ -68,7 +70,7 @@ function Shuffle2:regDivineMenu()
             local cocosAngle = 0
 
             cocosAngleTable[TableNum] = {["cocosAngle"] = cocosAngle}
-
+----
             ShuffleRotation(TarotSpriteTable[TableNum],cocosAngleTable[TableNum])
             TarotSpriteTable[TableNum]:setPosition(ORIGIN.x + WIN_SIZE.width*2/3, ORIGIN.y + WIN_SIZE.height*4/9)
 
@@ -116,6 +118,7 @@ function Shuffle2:regDivineMenu()
                     ShufflePart2Action = cc.Sequence:create(ShuffleChooseRotation_NormalCallFunc,MoveUp,Button_StateReturnCallFunc)
                     end
 
+----
                     TarotSpriteTable[i]:runAction(ShufflePart2Action)
                     TarotSpriteTable[200 + Temp] = TarotSpriteTable[i]
                     TarotTable[100 + Temp] = TarotTable[i]
@@ -154,7 +157,7 @@ function Shuffle2:regDivineMenu()
                     else
                     ShufflePart2Action = cc.Sequence:create(ShuffleChooseRotation_NormalCallFunc,MoveUp,Button_StateReturnCallFunc)
                     end
-
+----
                     TarotSpriteTable[i]:runAction(ShufflePart2Action)
                     TarotSpriteTable[200 + Temp] = TarotSpriteTable[i]
                     TarotTable[100 + Temp] = TarotTable[i]
@@ -193,7 +196,7 @@ function Shuffle2:regDivineMenu()
                     else
                     ShufflePart2Action = cc.Sequence:create(ShuffleChooseRotation_NormalCallFunc,MoveUp,Button_StateReturnCallFunc)
                     end
-                   
+----                    
                     TarotSpriteTable[i]:runAction(ShufflePart2Action)
                     TarotSpriteTable[200 + Temp] = TarotSpriteTable[i]
                     TarotTable[100 + Temp] = TarotTable[i]
@@ -222,7 +225,7 @@ function Shuffle2:regDivineMenu()
                     else
                     ShufflePart2Action = cc.Sequence:create(MoveTop,MoveDown,Reflush_ShuffleCallFunc)
                     end
-
+----
                     TarotSpriteTable[200 + i]:runAction(ShufflePart2Action)
                 end
 
@@ -255,7 +258,7 @@ function Shuffle2:regDivineMenu()
                     else
                     ShufflePart2Action = cc.Sequence:create(MoveCenter,MoveDown,Reflush_ShuffleCallFunc)
                     end
-
+----
                     TarotSpriteTable[200 + i]:runAction(ShufflePart2Action)
                 end
 
@@ -283,7 +286,8 @@ function Shuffle2:regDivineMenu()
                 for i = i_First, i_Last do
                     local MoveBottom = cc.MoveTo:create(1.0,cc.p(ORIGIN.x + WIN_SIZE.width*2/9 - i*WIN_SIZE.width/64, ORIGIN.y + WIN_SIZE.height*6/9))
                     local MoveDown = cc.MoveBy:create(1.0,cc.p(0,ORIGIN.y - WIN_SIZE.height*2/9))
-
+--                     cocosAngleTable[i] = {["cocosAngle"] = 0}
+--                     local ShuffleInsertRotation_BottomCallFunc = cc.CallFunc:create(ShuffleRotation,cocosAngleTable[i])
                     local Reflush_ShuffleCallFunc = cc.CallFunc:create(Reflush_Shuffle)
                     local ShufflePart2Action
                     if i ~= i_Last then
@@ -291,7 +295,7 @@ function Shuffle2:regDivineMenu()
                     else
                     ShufflePart2Action = cc.Sequence:create(MoveBottom,MoveDown,Reflush_ShuffleCallFunc)
                     end
-
+----
                     TarotSpriteTable[200 + i]:runAction(ShufflePart2Action)
                 end
 

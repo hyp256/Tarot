@@ -6,7 +6,7 @@
       <ObjectData Name="root" Tag="3" ctype="GameNodeObjectData">
         <Size X="960.0000" Y="640.0000" />
         <Children>
-          <AbstractNodeData Name="backGround" ActionTag="1948895015" Tag="6" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" LeftMargin="180.0000" RightMargin="180.0000" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" LeftEage="211" RightEage="211" TopEage="203" BottomEage="203" Scale9OriginX="211" Scale9OriginY="203" Scale9Width="218" Scale9Height="212" ctype="PanelObjectData">
+          <AbstractNodeData Name="backGround" ActionTag="1948895015" Tag="6" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" LeftMargin="180.0000" RightMargin="180.0000" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" LeftEage="211" RightEage="211" TopEage="203" BottomEage="203" Scale9OriginX="211" Scale9OriginY="203" Scale9Width="538" Scale9Height="134" ctype="PanelObjectData">
             <Size X="600.0000" Y="640.0000" />
             <Children>
               <AbstractNodeData Name="label_Aside" ActionTag="-1558841874" Tag="7" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="7.0000" RightMargin="7.0000" TopMargin="538.6000" BottomMargin="39.4000" FontSize="60" LabelText="轻触屏幕       开始游戏" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
@@ -28,7 +28,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.5000" Y="0.5000" />
             <PreSize X="0.6250" Y="1.0000" />
-            <FileData Type="Normal" Path="Photos/TAROTWELCOME.jpg" Plist="" />
+            <FileData Type="Normal" Path="Photos/TAROTWELCOME.png" Plist="" />
             <SingleColor A="255" R="0" G="0" B="0" />
             <FirstColor A="255" R="150" G="200" B="255" />
             <EndColor A="255" R="255" G="255" B="255" />

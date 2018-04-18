@@ -21,7 +21,7 @@ local function initUI()
         --Create backGround
         local backGround = ccui.Layout:create()
         backGround:ignoreContentAdaptWithSize(false)
-        backGround:setBackGroundImage("Photos/TAROTWELCOME.jpg",0)
+        backGround:setBackGroundImage("Photos/TAROTWELCOME.png",0)
         backGround:setClippingEnabled(false)
         backGround:setBackGroundColorType(1)
         backGround:setBackGroundColor({r = 0, g = 0, b = 0})
@@ -104,7 +104,7 @@ local function initUI()
         end
 
         local ExitItem = cc.MenuItemImage:create("Photos/Button/CloseNormal.png", "Photos/Button/CloseSelected.png")
-        ExitItem:setPosition(ORIGIN.x + VISIBLE_SIZE.width - ExitItem:getContentSize().width/2, ORIGIN.y + ExitItem:getContentSize().height/2)
+        ExitItem:setPosition(ORIGIN.x + WIN_SIZE.width - ExitItem:getContentSize().width/2, ORIGIN.y + ExitItem:getContentSize().height/2)
         ExitItem:registerScriptTapHandler(ExitApp)
         local Menu = cc.Menu:create(ExitItem)
         Menu:setPosition(0,0)

@@ -71,9 +71,11 @@ function Shuffle1:regDivineMenu()
     --第一步洗牌选择
     local function Reflush_Shuffle(Sprite)
         for TableNum = 0,(TAROT_LAST - TAROT_FIRST) do
+----
             TarotSpriteTable[TableNum]:setPosition(ORIGIN.x + WIN_SIZE.width/2, ORIGIN.y + WIN_SIZE.height*4/9)
             local MoveLeft = cc.MoveTo:create(1.0,cc.p(ORIGIN.x + WIN_SIZE.width/2 - TableNum*WIN_SIZE.width/64, ORIGIN.y + WIN_SIZE.height*4/9))
             local ShufflePart1Action = cc.Sequence:create(MoveLeft)
+----
             TarotSpriteTable[TableNum]:runAction(ShufflePart1Action)
         end
         Ui_Shuffle_Button_State_aftercallback = UI_BUTTON_STATE_NORMAL_AFTERCALLBACK
@@ -108,6 +110,7 @@ function Shuffle1:regDivineMenu()
                     else
                     ShufflePart1Action = cc.Sequence:create(MoveUp,MoveRight,MoveDown,Reflush_ShuffleCallFunc)
                     end
+----
                     TarotSpriteTable[i]:runAction(ShufflePart1Action)
                     TarotTable[100] = TarotTable[i-5]
                     TarotTable[i-5] = TarotTable[i]
@@ -136,6 +139,7 @@ function Shuffle1:regDivineMenu()
                     else
                     ShufflePart1Action = cc.Sequence:create(MoveUp,MoveRight,MoveDown,Reflush_ShuffleCallFunc)
                     end
+----
                     TarotSpriteTable[i]:runAction(ShufflePart1Action)
                     TarotTable[100 + i] = TarotTable[i]
                 end
@@ -170,6 +174,7 @@ function Shuffle1:regDivineMenu()
                     else
                     ShufflePart1Action = cc.Sequence:create(MoveUp,MoveRight,MoveDown,Reflush_ShuffleCallFunc)
                     end
+----
                     TarotSpriteTable[i]:runAction(ShufflePart1Action)
                     TarotTable[100 + i] = TarotTable[i]
                 end

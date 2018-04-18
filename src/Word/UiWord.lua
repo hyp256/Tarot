@@ -45,6 +45,6 @@
 
                        ["Ui_End_Button_Exit"] = "退出游戏",
 
-                       ["Ui_End_Button_Share"] = "分享"
+                       ["Ui_End_Button_Share"] = "分享游戏"
    }
 end

@@ -34,7 +34,7 @@
             <ColorVector ScaleY="1.0000" />
             <InnerNodeSize Width="768" Height="192" />
           </AbstractNodeData>
-          <AbstractNodeData Name="backGround" ActionTag="1743919553" Tag="5" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" LeftMargin="96.0000" RightMargin="96.0000" TopMargin="96.0000" BottomMargin="96.0000" TouchEnable="True" ClipAble="True" ComboBoxIndex="1" ColorAngle="90.0000" LeftEage="211" RightEage="211" TopEage="203" BottomEage="203" Scale9OriginX="211" Scale9OriginY="203" Scale9Width="218" Scale9Height="212" ctype="PanelObjectData">
+          <AbstractNodeData Name="backGround" ActionTag="1743919553" Tag="5" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" LeftMargin="96.0000" RightMargin="96.0000" TopMargin="96.0000" BottomMargin="96.0000" TouchEnable="True" ClipAble="True" ComboBoxIndex="1" ColorAngle="90.0000" LeftEage="211" RightEage="211" TopEage="203" BottomEage="203" Scale9OriginX="211" Scale9OriginY="203" Scale9Width="538" Scale9Height="134" ctype="PanelObjectData">
             <Size X="768.0000" Y="448.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="480.0000" Y="320.0000" />
@@ -42,7 +42,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.5000" Y="0.5000" />
             <PreSize X="0.8000" Y="0.7000" />
-            <FileData Type="Normal" Path="Photos/TAROTWELCOME.jpg" Plist="" />
+            <FileData Type="Normal" Path="Photos/TAROTWELCOME.png" Plist="" />
             <SingleColor A="255" R="0" G="0" B="0" />
             <FirstColor A="255" R="150" G="200" B="255" />
             <EndColor A="255" R="255" G="255" B="255" />

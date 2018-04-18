@@ -29,12 +29,12 @@ function Share:share()
             --标题
             title = "Tarot真有趣",
             --标题链接
-            titleUrl = "http://sharesdk.cn",
+            --titleUrl = "http://sharesdk.cn",
 
             --分享此内容的网站名称
             site = "Tarot",
             --分享此内容的网站链接
-            siteUrl = "http://sharesdk.cn",
+            --siteUrl = "http://sharesdk.cn",
 
             --分享内容
             text = "我刚玩了Tarot,很有趣哦,来看看吧",
