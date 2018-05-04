@@ -18,14 +18,15 @@ function MyApp:onCreate()
        audio.preloadMusic(bgMusicPath)
        audio.playMusic(bgMusicPath, true)
     end
-
+--[[
     --≥ı ºªØAnySdk
     local targetPlatform = cc.Application:getInstance():getTargetPlatform()
     if (cc.PLATFORM_OS_ANDROID == targetPlatform) then
     --º”‘ÿSdkplugin
-        Sdkplugin = require "Sdkplugin/Sdkplugin"
+        Sdkplugin = require "AnySdkplugin/Sdkplugin"
         Sdkplugin.new()
     end
+]]--
 end
 
 return MyApp

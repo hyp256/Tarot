@@ -279,7 +279,7 @@ local function initUI()
 
 --∑÷œÌbutton
     function shareMenu()
-        local function shareApp(ref,type)
+        --[[local function shareApp(ref,type)
         local targetPlatform = cc.Application:getInstance():getTargetPlatform()
             if type == ccui.TouchEventType.ended and (cc.PLATFORM_OS_ANDROID == targetPlatform) then
                 local item = Sdkplugin:getItem("SHARE_SYS","SHARE")
@@ -287,7 +287,8 @@ local function initUI()
             end
         end
 
-        shareItem:addTouchEventListener(shareApp)
+        shareItem:addTouchEventListener(shareApp)]]--
+        cclog("share Tarot")
     end
 
 --init
