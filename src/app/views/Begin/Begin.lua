@@ -22,8 +22,8 @@ function Begin:regDivineMenu()
     local function ReplaceToShuffle1Scene()
         local targetPlatform = cc.Application:getInstance():getTargetPlatform()
         if (cc.PLATFORM_OS_ANDROID == targetPlatform) then
-            local item = Sdkplugin:getItem("ANALYTICS_SYS","START_SESSION")
-            Sdkplugin:menuCallback(item)
+            --local item = Sdkplugin:getItem("ANALYTICS_SYS","START_SESSION")
+            --Sdkplugin:menuCallback(item)
         end
 
         package.loaded["Shuffle/Shuffle1"]  = nil

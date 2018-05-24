@@ -12,8 +12,8 @@ LOCAL_SRC_FILES := ../../Classes/AppDelegate.cpp \
 ../../Classes/ide-support/RuntimeLuaImpl.cpp \
 ../../Classes/ide-support/lua_debugger.c \
 hellolua/main.cpp \
-../../Classes/anysdk_manual_bindings.cpp \
-../../Classes/anysdkbindings.cpp
+#../../Classes/anysdk_manual_bindings.cpp \
+#../../Classes/anysdkbindings.cpp
 
 LOCAL_CPPFLAGS := -DSDKBOX_ENABLED
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes

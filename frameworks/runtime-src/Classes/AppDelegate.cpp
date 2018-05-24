@@ -13,12 +13,6 @@
 #include "ide-support/RuntimeLuaImpl.h"
 #endif
 
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID || CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
-#include "AgentManager.h"
-#include "anysdkbindings.h"
-#include "anysdk_manual_bindings.h"
-using namespace anysdk::framework;
-#endif
 using namespace CocosDenshion;
 
 USING_NS_CC;
@@ -37,9 +31,6 @@ AppDelegate::~AppDelegate()
     RuntimeEngine::getInstance()->end();
 #endif
 
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID || CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
-    AgentManager::getInstance()->unloadAllPlugins();
-#endif
 }
 
 //if you want a different context,just modify the value of glContextAttrs
@@ -62,22 +53,6 @@ static int register_all_packages()
 
 bool AppDelegate::applicationDidFinishLaunching()
 {
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID || CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
-    /**
-     * appKey、appSecret、privateKey需要从打包工具中游戏管理界面获取，替换
-     * oauthLoginServer参数是游戏服务提供的用来做登陆验证转发的接口地址。
-     */
-    std::string oauthLoginServer = "http://oauth.anysdk.com/api/OauthLoginDemo/Login.php";
-    std::string appKey = "A39145B1-D831-BCED-E5A2-589AAD41F747";
-    std::string appSecret = "a5a8008fa444edd8028acb38e75e26fb";
-    std::string privateKey = "35A3CD91B0C12DD15DE0C29FA96ADDDA";
-    
-    AgentManager* pAgent = AgentManager::getInstance();
-    pAgent->init(appKey,appSecret,privateKey,oauthLoginServer);
-    
-    //使用框架中代理类进行插件初始化
-    pAgent->loadAllPlugins();
-#endif
     // set default FPS
     Director::getInstance()->setAnimationInterval(1.0 / 60.0f);
 
@@ -91,18 +66,11 @@ bool AppDelegate::applicationDidFinishLaunching()
 
     LuaStack* stack = engine->getLuaStack();
     stack->setXXTEAKeyAndSign("2dxLua", strlen("2dxLua"), "XXTEA", strlen("XXTEA"));
-    
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID || CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
-    lua_getglobal(stack->getLuaState(), "_G");
-    tolua_anysdk_open(stack->getLuaState());
-    tolua_anysdk_manual_open(stack->getLuaState());
-    lua_pop(stack->getLuaState(), 1);
-#endif
 
     //register custom function
     //LuaStack* stack = engine->getLuaStack();
     //register_custom_function(stack->getLuaState());
-	engine->executeString("print = release_print");
+
 #if (COCOS2D_DEBUG > 0) && (CC_CODE_IDE_DEBUG_SUPPORT > 0)
     // NOTE:Please don't remove this call if you want to debug with Cocos Code IDE
     auto runtimeEngine = RuntimeEngine::getInstance();

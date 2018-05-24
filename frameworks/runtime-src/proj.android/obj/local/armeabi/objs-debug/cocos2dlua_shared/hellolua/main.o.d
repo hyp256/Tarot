@@ -8,29 +8,29 @@ obj/local/armeabi/objs-debug/cocos2dlua_shared/hellolua/main.o: \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/ccConfig.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../platform/CCPlatformDefine.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../platform/android/CCPlatformDefine-android.h \
- d:/programming/android-ndk-r10d/platforms/android-9/arch-arm/usr/include/android/log.h \
+ d:/programming/eclipse/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/android/log.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/CCDirector.h \
- d:/programming/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/stack \
- d:/programming/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/thread \
+ d:/programming/eclipse/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/stack \
+ d:/programming/eclipse/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/thread \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/CCRef.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/CCVector.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/ccMacros.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/CCConsole.h \
- d:/programming/android-ndk-r10d/platforms/android-9/arch-arm/usr/include/sys/select.h \
- d:/programming/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/vector \
- d:/programming/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/map \
- d:/programming/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/mutex \
+ d:/programming/eclipse/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/sys/select.h \
+ d:/programming/eclipse/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/vector \
+ d:/programming/eclipse/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/map \
+ d:/programming/eclipse/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/mutex \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../platform/CCStdC.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../platform/android/CCStdC-android.h \
- d:/programming/android-ndk-r10d/platforms/android-9/arch-arm/usr/include/math.h \
- d:/programming/android-ndk-r10d/platforms/android-9/arch-arm/usr/include/stdlib.h \
- d:/programming/android-ndk-r10d/platforms/android-9/arch-arm/usr/include/alloca.h \
- d:/programming/android-ndk-r10d/platforms/android-9/arch-arm/usr/include/strings.h \
- d:/programming/android-ndk-r10d/platforms/android-9/arch-arm/usr/include/memory.h \
- d:/programming/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert \
+ d:/programming/eclipse/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/math.h \
+ d:/programming/eclipse/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/stdlib.h \
+ d:/programming/eclipse/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/alloca.h \
+ d:/programming/eclipse/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/strings.h \
+ d:/programming/eclipse/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/memory.h \
+ d:/programming/eclipse/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/ccRandom.h \
- d:/programming/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/random \
- d:/programming/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm \
+ d:/programming/eclipse/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/random \
+ d:/programming/eclipse/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../2d/CCScene.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../2d/CCNode.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/CCProtocols.h \
@@ -54,31 +54,31 @@ obj/local/armeabi/objs-debug/cocos2dlua_shared/hellolua/main.o: \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../math/Quaternion.inl \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../platform/CCGL.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../platform/android/CCGL-android.h \
- d:/programming/android-ndk-r10d/platforms/android-9/arch-arm/usr/include/GLES2/gl2platform.h \
- d:/programming/android-ndk-r10d/platforms/android-9/arch-arm/usr/include/KHR/khrplatform.h \
- d:/programming/android-ndk-r10d/platforms/android-9/arch-arm/usr/include/GLES2/gl2.h \
- d:/programming/android-ndk-r10d/platforms/android-9/arch-arm/usr/include/GLES2/gl2ext.h \
+ d:/programming/eclipse/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/GLES2/gl2platform.h \
+ d:/programming/eclipse/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/KHR/khrplatform.h \
+ d:/programming/eclipse/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/GLES2/gl2.h \
+ d:/programming/eclipse/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/GLES2/gl2ext.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../renderer/CCTexture2D.h \
- d:/programming/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_map \
+ d:/programming/eclipse/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_map \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/CCScriptSupport.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../platform/CCCommon.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/CCTouch.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/CCEventTouch.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/CCEvent.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/CCEventKeyboard.h \
- d:/programming/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/list \
+ d:/programming/eclipse/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/list \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../math/CCAffineTransform.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../2d/CCComponentContainer.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/CCMap.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../2d/CCComponent.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../platform/CCGLView.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/CCScheduler.h \
- d:/programming/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/set \
+ d:/programming/eclipse/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/set \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/uthash.h \
- d:/programming/android-ndk-r10d/platforms/android-9/arch-arm/usr/include/inttypes.h \
- d:/programming/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/queue \
- d:/programming/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/condition_variable \
- d:/programming/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/future \
+ d:/programming/eclipse/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/inttypes.h \
+ d:/programming/eclipse/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/queue \
+ d:/programming/eclipse/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/condition_variable \
+ d:/programming/eclipse/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/future \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/CCAutoreleasePool.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/CCConfiguration.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/CCValue.h \
@@ -117,8 +117,8 @@ obj/local/armeabi/objs-debug/cocos2dlua_shared/hellolua/main.o: \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/ZipUtils.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../platform/android/CCFileUtils-android.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../platform/CCFileUtils.h \
- d:/programming/android-ndk-r10d/platforms/android-9/arch-arm/usr/include/jni.h \
- d:/programming/android-ndk-r10d/platforms/android-9/arch-arm/usr/include/android/asset_manager.h \
+ d:/programming/eclipse/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/jni.h \
+ d:/programming/eclipse/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/android/asset_manager.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/base64.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/ccMacros.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/ccTypes.h \
@@ -339,7 +339,7 @@ obj/local/armeabi/objs-debug/cocos2dlua_shared/hellolua/main.o: \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../deprecated/CCDictionary.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../deprecated/CCArray.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../deprecated/CCString.h \
- d:/programming/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/sstream \
+ d:/programming/eclipse/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/sstream \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../deprecated/CCDouble.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../deprecated/CCFloat.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../deprecated/CCInteger.h \
@@ -351,7 +351,7 @@ obj/local/armeabi/objs-debug/cocos2dlua_shared/hellolua/main.o: \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/external/flatbuffers/prebuilt-mk/../../json/document.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/external/flatbuffers/prebuilt-mk/../../json/reader.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/external/flatbuffers/prebuilt-mk/../../json/rapidjson.h \
- d:/programming/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/cstring \
+ d:/programming/eclipse/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/cstring \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/external/flatbuffers/prebuilt-mk/../../json/allocators.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/external/flatbuffers/prebuilt-mk/../../json/encodings.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/external/flatbuffers/prebuilt-mk/../../json/internal/meta.h \
@@ -365,7 +365,7 @@ obj/local/armeabi/objs-debug/cocos2dlua_shared/hellolua/main.o: \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/external/flatbuffers/prebuilt-mk/../../json/error/error.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/external/flatbuffers/prebuilt-mk/../../json/error/../rapidjson.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/external/flatbuffers/prebuilt-mk/../../json/internal/strfunc.h \
- d:/programming/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/iterator \
+ d:/programming/eclipse/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/iterator \
  jni/../../Classes/ide-support/CodeIDESupport.h \
  jni/../protocols/android/PluginJniHelper.h
 
@@ -387,13 +387,13 @@ D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../platfo
 
 D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../platform/android/CCPlatformDefine-android.h:
 
-d:/programming/android-ndk-r10d/platforms/android-9/arch-arm/usr/include/android/log.h:
+d:/programming/eclipse/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/android/log.h:
 
 D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/CCDirector.h:
 
-d:/programming/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/stack:
+d:/programming/eclipse/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/stack:
 
-d:/programming/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/thread:
+d:/programming/eclipse/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/thread:
 
 D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/CCRef.h:
 
@@ -403,35 +403,35 @@ D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/c
 
 D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/CCConsole.h:
 
-d:/programming/android-ndk-r10d/platforms/android-9/arch-arm/usr/include/sys/select.h:
+d:/programming/eclipse/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/sys/select.h:
 
-d:/programming/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/vector:
+d:/programming/eclipse/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/vector:
 
-d:/programming/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/map:
+d:/programming/eclipse/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/map:
 
-d:/programming/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/mutex:
+d:/programming/eclipse/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/mutex:
 
 D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../platform/CCStdC.h:
 
 D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../platform/android/CCStdC-android.h:
 
-d:/programming/android-ndk-r10d/platforms/android-9/arch-arm/usr/include/math.h:
+d:/programming/eclipse/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/math.h:
 
-d:/programming/android-ndk-r10d/platforms/android-9/arch-arm/usr/include/stdlib.h:
+d:/programming/eclipse/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/stdlib.h:
 
-d:/programming/android-ndk-r10d/platforms/android-9/arch-arm/usr/include/alloca.h:
+d:/programming/eclipse/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/alloca.h:
 
-d:/programming/android-ndk-r10d/platforms/android-9/arch-arm/usr/include/strings.h:
+d:/programming/eclipse/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/strings.h:
 
-d:/programming/android-ndk-r10d/platforms/android-9/arch-arm/usr/include/memory.h:
+d:/programming/eclipse/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/memory.h:
 
-d:/programming/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert:
+d:/programming/eclipse/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert:
 
 D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/ccRandom.h:
 
-d:/programming/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/random:
+d:/programming/eclipse/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/random:
 
-d:/programming/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm:
+d:/programming/eclipse/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm:
 
 D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../2d/CCScene.h:
 
@@ -479,17 +479,17 @@ D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../platfo
 
 D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../platform/android/CCGL-android.h:
 
-d:/programming/android-ndk-r10d/platforms/android-9/arch-arm/usr/include/GLES2/gl2platform.h:
+d:/programming/eclipse/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/GLES2/gl2platform.h:
 
-d:/programming/android-ndk-r10d/platforms/android-9/arch-arm/usr/include/KHR/khrplatform.h:
+d:/programming/eclipse/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/KHR/khrplatform.h:
 
-d:/programming/android-ndk-r10d/platforms/android-9/arch-arm/usr/include/GLES2/gl2.h:
+d:/programming/eclipse/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/GLES2/gl2.h:
 
-d:/programming/android-ndk-r10d/platforms/android-9/arch-arm/usr/include/GLES2/gl2ext.h:
+d:/programming/eclipse/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/GLES2/gl2ext.h:
 
 D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../renderer/CCTexture2D.h:
 
-d:/programming/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_map:
+d:/programming/eclipse/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_map:
 
 D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/CCScriptSupport.h:
 
@@ -503,7 +503,7 @@ D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/C
 
 D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/CCEventKeyboard.h:
 
-d:/programming/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/list:
+d:/programming/eclipse/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/list:
 
 D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../math/CCAffineTransform.h:
 
@@ -517,17 +517,17 @@ D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../platfo
 
 D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/CCScheduler.h:
 
-d:/programming/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/set:
+d:/programming/eclipse/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/set:
 
 D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/uthash.h:
 
-d:/programming/android-ndk-r10d/platforms/android-9/arch-arm/usr/include/inttypes.h:
+d:/programming/eclipse/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/inttypes.h:
 
-d:/programming/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/queue:
+d:/programming/eclipse/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/queue:
 
-d:/programming/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/condition_variable:
+d:/programming/eclipse/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/condition_variable:
 
-d:/programming/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/future:
+d:/programming/eclipse/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/future:
 
 D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/CCAutoreleasePool.h:
 
@@ -605,9 +605,9 @@ D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../platfo
 
 D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../platform/CCFileUtils.h:
 
-d:/programming/android-ndk-r10d/platforms/android-9/arch-arm/usr/include/jni.h:
+d:/programming/eclipse/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/jni.h:
 
-d:/programming/android-ndk-r10d/platforms/android-9/arch-arm/usr/include/android/asset_manager.h:
+d:/programming/eclipse/android-ndk-r10d/platforms/android-17/arch-arm/usr/include/android/asset_manager.h:
 
 D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../base/base64.h:
 
@@ -1049,7 +1049,7 @@ D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../deprec
 
 D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../deprecated/CCString.h:
 
-d:/programming/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/sstream:
+d:/programming/eclipse/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/sstream:
 
 D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//3d/prebuilt-mk/../../deprecated/CCDouble.h:
 
@@ -1073,7 +1073,7 @@ D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/external/flatbuffers/prebuilt-mk/.
 
 D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/external/flatbuffers/prebuilt-mk/../../json/rapidjson.h:
 
-d:/programming/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/cstring:
+d:/programming/eclipse/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/cstring:
 
 D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/external/flatbuffers/prebuilt-mk/../../json/allocators.h:
 
@@ -1101,7 +1101,7 @@ D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/external/flatbuffers/prebuilt-mk/.
 
 D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/external/flatbuffers/prebuilt-mk/../../json/internal/strfunc.h:
 
-d:/programming/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/iterator:
+d:/programming/eclipse/android-ndk-r10d/sources/cxx-stl/gnu-libstdc++/4.9/include/iterator:
 
 jni/../../Classes/ide-support/CodeIDESupport.h:
 
