@@ -4,13 +4,29 @@
 #include "cocos2d.h"
 #include "lua_module_register.h"
 
+
+
 #if (CC_TARGET_PLATFORM != CC_PLATFORM_LINUX)
 #include "ide-support/CodeIDESupport.h"
 #endif
 
-#if (COCOS2D_DEBUG > 0) && (CC_CODE_IDE_DEBUG_SUPPORT > 0)
+#if (COCOS2D_DEBUG > 0) //&& (CC_CODE_IDE_DEBUG_SUPPORT > 0)
 #include "runtime/Runtime.h"
 #include "ide-support/RuntimeLuaImpl.h"
+
+#ifdef SDKBOX_ENABLED
+#include "PluginAchievementLua.hpp"
+#include "PluginAchievementLuaHelper.h"
+#endif
+#ifdef SDKBOX_ENABLED
+#include "PluginLeaderboardLua.hpp"
+#include "PluginLeaderboardLuaHelper.h"
+#endif
+#ifdef SDKBOX_ENABLED
+#include "PluginIAPLua.hpp"
+#include "PluginIAPLuaHelper.h"
+#endif
+
 #endif
 
 using namespace CocosDenshion;
@@ -48,6 +64,21 @@ void AppDelegate::initGLContextAttrs()
 // don't modify or remove this function
 static int register_all_packages()
 {
+#ifdef SDKBOX_ENABLED
+    register_all_PluginAchievementLua(LuaEngine::getInstance()->getLuaStack()->getLuaState());
+    register_all_PluginAchievementLua_helper(LuaEngine::getInstance()->getLuaStack()->getLuaState());
+#endif
+
+#ifdef SDKBOX_ENABLED
+    register_all_PluginLeaderboardLua(LuaEngine::getInstance()->getLuaStack()->getLuaState());
+    register_all_PluginLeaderboardLua_helper(LuaEngine::getInstance()->getLuaStack()->getLuaState());
+#endif
+
+#ifdef SDKBOX_ENABLED
+    register_all_PluginIAPLua(LuaEngine::getInstance()->getLuaStack()->getLuaState());
+    register_all_PluginIAPLua_helper(LuaEngine::getInstance()->getLuaStack()->getLuaState());
+#endif
+
     return 0; //flag for packages manager
 }
 
@@ -61,9 +92,9 @@ bool AppDelegate::applicationDidFinishLaunching()
     ScriptEngineManager::getInstance()->setScriptEngine(engine);
     lua_State* L = engine->getLuaStack()->getLuaState();
     lua_module_register(L);
-
+    //__android_log_print(ANDROID_LOG_DEBUG  , "AppDelegate.cpp", "===============================1");
     register_all_packages();
-
+    //__android_log_print(ANDROID_LOG_DEBUG  , "AppDelegate.cpp", "===============================2");
     LuaStack* stack = engine->getLuaStack();
     stack->setXXTEAKeyAndSign("2dxLua", strlen("2dxLua"), "XXTEA", strlen("XXTEA"));
 

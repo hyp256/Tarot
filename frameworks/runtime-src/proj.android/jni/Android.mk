@@ -19,6 +19,8 @@ hellolua/main.cpp \
 ../../Classes/PluginLeaderboardLuaHelper.cpp \
 ../../Classes/PluginAchievementLua.cpp \
 ../../Classes/PluginAchievementLuaHelper.cpp
+#../../Classes/anysdk_manual_bindings.cpp \
+#../../Classes/anysdkbindings.cpp
 
 LOCAL_CPPFLAGS := -DSDKBOX_ENABLED
 LOCAL_LDLIBS := -landroid \
@@ -28,7 +30,8 @@ LOCAL_WHOLE_STATIC_LIBRARIES := PluginIAP \
 sdkbox \
 android_native_app_glue \
 PluginLeaderboard \
-PluginAchievement
+PluginAchievement \
+PluginProtocolStatic 
 
 # _COCOS_HEADER_ANDROID_BEGIN
 # _COCOS_HEADER_ANDROID_END
@@ -48,6 +51,7 @@ $(call import-module, ./sdkbox)
 $(call import-module, ./pluginiap)
 $(call import-module, ./pluginleaderboard)
 $(call import-module, ./pluginachievement)
+$(call import-module,../protocols/android)
 
 # _COCOS_LIB_IMPORT_ANDROID_BEGIN
 # _COCOS_LIB_IMPORT_ANDROID_END

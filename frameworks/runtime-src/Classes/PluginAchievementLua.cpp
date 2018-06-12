@@ -65,6 +65,8 @@ int lua_PluginAchievementLua_PluginAchievement_unlock(lua_State* tolua_S)
         }
         sdkbox::PluginAchievement::unlock(arg0);
         lua_settop(tolua_S, 1);
+__android_log_print(ANDROID_LOG_DEBUG, "PluginAchievementLua.hpp", "sdkbox.PluginAchievement:unlock %s",arg0.c_str());
+
         return 1;
     }
     luaL_error(tolua_S, "%s has wrong number of arguments: %d, was expecting %d\n ", "sdkbox.PluginAchievement:unlock",argc, 1);

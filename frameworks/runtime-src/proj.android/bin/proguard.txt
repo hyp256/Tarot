@@ -1,0 +1,18 @@
+# view AndroidManifest.xml #generated:92
+-keep class com.playphone.psgn.InstallReferrerReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:54
+-keep class com.playphone.psgn.PSGNProxyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:49
+-keep class com.playphone.psgn.PSGNService { <init>(...); }
+
+# view AndroidManifest.xml #generated:61
+-keep class com.playphone.psgn.android.BillingReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:38
+-keep class com.playphone.psgn.android.BillingService { <init>(...); }
+
+# view AndroidManifest.xml #generated:7
+-keep class org.cocos2dx.lua.AppActivity { <init>(...); }
+
