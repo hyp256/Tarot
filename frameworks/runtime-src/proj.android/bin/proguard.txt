@@ -1,16 +1,25 @@
-# view AndroidManifest.xml #generated:92
+# view AndroidManifest.xml #generated:110
+-keep class com.inmobi.commons.core.utilities.uid.ImIdShareBroadCastReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:109
+-keep class com.inmobi.rendering.InMobiAdActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:115
+-keep class com.inmobi.signals.activityrecognition.ActivityRecognitionManager { <init>(...); }
+
+# view AndroidManifest.xml #generated:94
 -keep class com.playphone.psgn.InstallReferrerReceiver { <init>(...); }
 
-# view AndroidManifest.xml #generated:54
+# view AndroidManifest.xml #generated:56
 -keep class com.playphone.psgn.PSGNProxyActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:49
+# view AndroidManifest.xml #generated:51
 -keep class com.playphone.psgn.PSGNService { <init>(...); }
 
-# view AndroidManifest.xml #generated:61
+# view AndroidManifest.xml #generated:63
 -keep class com.playphone.psgn.android.BillingReceiver { <init>(...); }
 
-# view AndroidManifest.xml #generated:38
+# view AndroidManifest.xml #generated:40
 -keep class com.playphone.psgn.android.BillingService { <init>(...); }
 
 # view AndroidManifest.xml #generated:7

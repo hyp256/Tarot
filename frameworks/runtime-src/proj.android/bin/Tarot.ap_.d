@@ -773,6 +773,7 @@ C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\asset
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\src\app\views\Begin\BeginUI.lua \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\src\app\views\Choice\Choice.lua \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\src\app\views\Choice\ChoiceUI.lua \
+C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\src\app\views\End\AdScene.lua \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\src\app\views\End\End.lua \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\src\app\views\End\EndUI.lua \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\src\app\views\End\PlayphoneScene.lua \
