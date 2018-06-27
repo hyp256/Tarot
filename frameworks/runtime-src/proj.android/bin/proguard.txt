@@ -1,3 +1,6 @@
+# view AndroidManifest.xml #generated:107
+-keep class com.apptracker.android.module.AppModuleActivity { <init>(...); }
+
 # view AndroidManifest.xml #generated:92
 -keep class com.playphone.psgn.InstallReferrerReceiver { <init>(...); }
 

@@ -8,10 +8,13 @@ local SOLDIER_ACHIEVEMENT_ID =  "21133"
 function PlayphoneScene:onCreate()
     print("Sample Startup")
 
-    local label = cc.Label:createWithSystemFont("QUIT", "sans", 32)
+    --local label = cc.Label:createWithSystemFont("QUIT", "sans", 32)
+    local label = cc.Label:createWithSystemFont("AD", "sans", 32)
     local quit = cc.MenuItemLabel:create(label)
     quit:onClicked(function()
-        os.exit(0)
+        --os.exit(0)
+        package.loaded["End/AdScene"]  = nil
+        self:getApp():enterScene("End/AdScene")        
     end)
     local size = label:getContentSize()
     local menu = cc.Menu:create(quit)
