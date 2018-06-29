@@ -1,5 +1,4 @@
-LOCAL_PATH := $(call \
-my-dir)
+LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
@@ -14,13 +13,21 @@ LOCAL_SRC_FILES := ../../Classes/AppDelegate.cpp \
 hellolua/main.cpp \
 ../../Classes/PluginIAPLua.cpp \
 ../../Classes/PluginIAPLuaHelper.cpp \
-../../Classes/SDKBoxLuaHelper.cpp \
 ../../Classes/PluginLeaderboardLua.cpp \
 ../../Classes/PluginLeaderboardLuaHelper.cpp \
 ../../Classes/PluginAchievementLua.cpp \
-../../Classes/PluginAchievementLuaHelper.cpp
-#../../Classes/anysdk_manual_bindings.cpp \
-#../../Classes/anysdkbindings.cpp
+../../Classes/PluginAchievementLuaHelper.cpp \
+../../Classes/PluginSdkboxAdsLua.hpp \
+../../Classes/PluginSdkboxAdsLua.cpp \
+../../Classes/PluginSdkboxAdsLuaHelper.cpp \
+../../Classes/PluginSdkboxAdsLuaHelper.h \
+../../Classes/SDKBoxLuaHelper.cpp \
+../../Classes/SDKBoxLuaHelper.h \
+../../Classes/PluginChartboostLua.cpp \
+../../Classes/PluginChartboostLua.hpp \
+../../Classes/PluginChartboostLuaHelper.cpp \
+../../Classes/PluginChartboostLuaHelper.h
+#../../Classes/anysdk_manual_bindings.cpp #../../Classes/anysdkbindings.cpp
 
 LOCAL_CPPFLAGS := -DSDKBOX_ENABLED
 LOCAL_LDLIBS := -landroid \
@@ -31,7 +38,9 @@ sdkbox \
 android_native_app_glue \
 PluginLeaderboard \
 PluginAchievement \
-PluginProtocolStatic 
+PluginProtocolStatic \
+PluginSdkboxAds \
+PluginChartboost
 
 # _COCOS_HEADER_ANDROID_BEGIN
 # _COCOS_HEADER_ANDROID_END
@@ -52,6 +61,8 @@ $(call import-module, ./pluginiap)
 $(call import-module, ./pluginleaderboard)
 $(call import-module, ./pluginachievement)
 $(call import-module,../protocols/android)
+$(call import-module, ./pluginsdkboxads)
+$(call import-module, ./pluginchartboost)
 
 # _COCOS_LIB_IMPORT_ANDROID_BEGIN
 # _COCOS_LIB_IMPORT_ANDROID_END

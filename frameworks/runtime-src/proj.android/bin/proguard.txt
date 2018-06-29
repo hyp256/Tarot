@@ -1,3 +1,6 @@
+# view AndroidManifest.xml #generated:105
+-keep class com.chartboost.sdk.CBImpressionActivity { <init>(...); }
+
 # view AndroidManifest.xml #generated:92
 -keep class com.playphone.psgn.InstallReferrerReceiver { <init>(...); }
 

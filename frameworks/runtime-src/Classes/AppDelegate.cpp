@@ -2,9 +2,11 @@
 #include "CCLuaEngine.h"
 #include "SimpleAudioEngine.h"
 #include "cocos2d.h"
+#ifdef SDKBOX_ENABLED
+#include "PluginSdkboxAdsLua.hpp"
+#include "PluginSdkboxAdsLuaHelper.h"
+#endif
 #include "lua_module_register.h"
-
-
 
 #if (CC_TARGET_PLATFORM != CC_PLATFORM_LINUX)
 #include "ide-support/CodeIDESupport.h"
@@ -13,7 +15,7 @@
 #if (COCOS2D_DEBUG > 0) //&& (CC_CODE_IDE_DEBUG_SUPPORT > 0)
 #include "runtime/Runtime.h"
 #include "ide-support/RuntimeLuaImpl.h"
-
+//playphone
 #ifdef SDKBOX_ENABLED
 #include "PluginAchievementLua.hpp"
 #include "PluginAchievementLuaHelper.h"
@@ -26,7 +28,11 @@
 #include "PluginIAPLua.hpp"
 #include "PluginIAPLuaHelper.h"
 #endif
-
+//Chartboost
+#ifdef SDKBOX_ENABLED
+#include "PluginChartboostLua.hpp"
+#include "PluginChartboostLuaHelper.h"
+#endif
 #endif
 
 using namespace CocosDenshion;
@@ -64,19 +70,28 @@ void AppDelegate::initGLContextAttrs()
 // don't modify or remove this function
 static int register_all_packages()
 {
+//playphone
 #ifdef SDKBOX_ENABLED
     register_all_PluginAchievementLua(LuaEngine::getInstance()->getLuaStack()->getLuaState());
     register_all_PluginAchievementLua_helper(LuaEngine::getInstance()->getLuaStack()->getLuaState());
 #endif
-
 #ifdef SDKBOX_ENABLED
     register_all_PluginLeaderboardLua(LuaEngine::getInstance()->getLuaStack()->getLuaState());
     register_all_PluginLeaderboardLua_helper(LuaEngine::getInstance()->getLuaStack()->getLuaState());
 #endif
-
 #ifdef SDKBOX_ENABLED
     register_all_PluginIAPLua(LuaEngine::getInstance()->getLuaStack()->getLuaState());
     register_all_PluginIAPLua_helper(LuaEngine::getInstance()->getLuaStack()->getLuaState());
+#endif
+
+#ifdef SDKBOX_ENABLED
+    register_all_PluginSdkboxAdsLua(LuaEngine::getInstance()->getLuaStack()->getLuaState());
+    register_all_PluginSdkboxAdsLua_helper(LuaEngine::getInstance()->getLuaStack()->getLuaState());
+#endif
+//Chartboost
+#ifdef SDKBOX_ENABLED
+    register_all_PluginChartboostLua(LuaEngine::getInstance()->getLuaStack()->getLuaState());
+    register_all_PluginChartboostLua_helper(LuaEngine::getInstance()->getLuaStack()->getLuaState());
 #endif
 
     return 0; //flag for packages manager
