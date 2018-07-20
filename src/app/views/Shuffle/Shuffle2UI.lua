@@ -19,7 +19,7 @@ local function initUI()
         local localFrame = nil
 --Create scrollView
         local scrollView = ccui.ScrollView:create()
-        scrollView:setInnerContainerSize({width = 768, height = 192})
+        scrollView:setInnerContainerSize({width = 768, height = 256})
         scrollView:ignoreContentAdaptWithSize(false)
         scrollView:setClippingEnabled(false)
         scrollView:setBackGroundColorType(1)
@@ -67,7 +67,7 @@ local function initUI()
         layout:setPercentHeightEnabled(true)
         layout:setPercentWidth(1.0000)
         layout:setPercentHeight(1.0000)
-        layout:setSize({width = 768.0000, height = 192.0000})
+        layout:setSize({width = 768.0000, height = 256.0000})
         scrollView:addChild(label_Aside)
 
         --Create backGround
