@@ -45,7 +45,7 @@ layout:setSize({width = 768.0000, height = 128.0000})
 layout:setLeftMargin(96.0000)
 layout:setRightMargin(96.0000)
 layout:setBottomMargin(512.0000)
-root:addChild(scrollView,UI_LAYERZORDER_LABEL)
+root:addChild(scrollView)
 
 --Create label_Aside
 local label_Aside = ccui.Text:create()

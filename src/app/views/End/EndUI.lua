@@ -50,7 +50,7 @@ local function initUI()
 
         --Create scrollView_Aside
         local scrollView_Aside = ccui.ScrollView:create()
-        scrollView_Aside:setInnerContainerSize({width = 768, height = 255})
+        scrollView_Aside:setInnerContainerSize({width = 768, height = 320})
         scrollView_Aside:ignoreContentAdaptWithSize(false)
         scrollView_Aside:setClippingEnabled(true)
         scrollView_Aside:setBackGroundColorType(1)
@@ -99,7 +99,7 @@ local function initUI()
         layout:setPercentHeightEnabled(true)
         layout:setPercentWidth(1.0000)
         layout:setPercentHeight(1.0000)
-        layout:setSize({width = 768.0000, height = 256.0000})
+        layout:setSize({width = 768.0000, height = 320.0000})
         scrollView_Aside:addChild(label_Aside)
 
         --Create menuPanel
