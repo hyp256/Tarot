@@ -1,6 +1,71 @@
 {
     "android": {
-        "leaderboard": {}, 
+        "UnityAds": {
+            "gameId": "1493045", 
+            "testMode": true
+        }, 
+        "SdkboxAds": {
+            "units": [
+                "AdColony", 
+                "AdMob", 
+                "Chartboost", 
+                "InMobi", 
+                "Vungle", 
+                "LeadBolt"
+            ], 
+            "placements": [
+                {
+                    "units": [
+                        {
+                            "unit": "AdColony", 
+                            "name": "video", 
+                            "weight": 30
+                        }, 
+                        {
+                            "unit": "Chartboost", 
+                            "name": "Default", 
+                            "weight": 20
+                        }
+                    ], 
+                    "id": "placement-1", 
+                    "strategy": "weight"
+                }, 
+                {
+                    "units": [
+                        {
+                            "name": "v4vc", 
+                            "unit": "AdColony"
+                        }, 
+                        {
+                            "name": "Level Complete", 
+                            "unit": "Chartboost"
+                        }
+                    ], 
+                    "id": "placement-2", 
+                    "strategy": "round-robin"
+                }, 
+                {
+                    "units": [
+                        {
+                            "name": "gameover", 
+                            "unit": "AdMob"
+                        }
+                    ], 
+                    "id": "placement-admob", 
+                    "strategy": "round-robin"
+                }, 
+                {
+                    "units": [
+                        {
+                            "name": "", 
+                            "unit": "UnityAds"
+                        }
+                    ], 
+                    "id": "placement-unity", 
+                    "strategy": "round-robin"
+                }
+            ]
+        }, 
         "iap": {
             "items": {
                 "remove_ads": {
@@ -20,10 +85,209 @@
             }, 
             "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq7eIGu7dRcBRBSC05cYvxjBMd7cqq9w6++1er+cqO2tyWPtWB4vuTkliq4k/Fkylx5UMfptdOYOW8ENgQyVucs/NyuOAGmve4j5JFhLPcLa6LjO2HUSY6zk04DRR9Zw7YPET4WAezZTz8jYMGhPG08HYltVj8cmSpSFWd1nI0pGOJoLQIMkIkXplgnPQRbMpuOu70vnQQBS1RFcoFT7OjaV8U0cfJzMoS1TMkGqaJKks2T+qOBNTtkXzge92EnvYIkhpCfN98dj6aQmETNp5yj5Fa+jcbAVF8dy5xymJwioL89XQKfKkGR+P6ESMoBEPfIZYIlMU8EUwmC+UKGLujQIDAQAB"
         }, 
-        "achievement": {}
+        "Appnext": {
+            "debug": true, 
+            "ads": {
+                "default": {
+                    "creative_type": "managed", 
+                    "postback": "postback", 
+                    "can_close": false, 
+                    "mute": false, 
+                    "type": "interstitial", 
+                    "cache": true, 
+                    "button_text": "Button Text", 
+                    "button_color": "#6AB344", 
+                    "skip_text": "Skip Text", 
+                    "id": "2f6850dd-190a-499d-aa50-1f4a3dd1ed5f", 
+                    "categories": "Action,Puzzle", 
+                    "autoplay": true
+                }, 
+                "fullscreen": {
+                    "cache": true, 
+                    "can_close": false, 
+                    "progress_color": "#ffffff", 
+                    "show_close_button": true, 
+                    "progress_type": "clock", 
+                    "postback": "postback", 
+                    "button_text": "Button Text", 
+                    "button_color": "#6AB344", 
+                    "kVideoLength": "short", 
+                    "type": "fullscreen", 
+                    "id": "17322152-1ef3-4e72-9677-eaf7c09f1054", 
+                    "categories": "Action,Puzzle"
+                }
+            }
+        }, 
+        "AdMob": {
+            "testdevice": "FE20924C46522E2E204587EB339897C6,kGADSimulatorID", 
+            "cache": {
+                "gameover": true
+            }, 
+            "ads": {
+                "gameover": {
+                    "type": "interstitial", 
+                    "id": "ca-app-pub-1329374026572143/1092476511"
+                }, 
+                "home": {
+                    "width": 300, 
+                    "type": "banner", 
+                    "id": "ca-app-pub-1329374026572143/2685130917", 
+                    "alignment": "bottom", 
+                    "height": 100
+                }
+            }
+        }, 
+        "LeadBolt": {
+            "api_key": "THi6gjCvO0YHP9Se3yYZODUFC5JLvV8v", 
+            "ads": {
+                "ad2": {
+                    "name": "video"
+                }, 
+                "ad1": {
+                    "name": "inapp"
+                }
+            }
+        }, 
+        "InMobi": {
+            "version": 1, 
+            "account_id": "7c58e3bbe1fd43009bdb87c258679252", 
+            "ads": {
+                "ad2": {
+                    "type": "interstitial", 
+                    "id": "1527423499558"
+                }, 
+                "ad1": {
+                    "width": 300, 
+                    "type": "banner", 
+                    "id": "1526597538630", 
+                    "alignment": "top", 
+                    "height": 50
+                }
+            }
+        }, 
+        "achievement": {}, 
+        "Appodeal": {
+            "app_key": "7acb75c06e543c3c49452f4acb0711377d77b63993cbad49"
+        }, 
+        "Vungle": {
+            "id": "5b177cd619829714e5ad6b26", 
+            "ads": {
+                "reward": {
+                    "sound": false, 
+                    "backbutton": false, 
+                    "incentivized": true
+                }, 
+                "video": {
+                    "sound": true, 
+                    "backbutton": true
+                }
+            }
+        }, 
+        "Chartboost": {
+            "cache": {
+                "Default": true, 
+                "Level Complete": true, 
+                "__ADS__": true
+            }, 
+            "signature": "c101ab33e9a3aea9eacd64c06289efe1a49c4747", 
+            "ads": {
+                "Default": {
+                    "type": "interstitial"
+                }, 
+                "Level Complete": {
+                    "type": "rewarded_video"
+                }, 
+                "MoreApp": {
+                    "type": "more_app"
+                }
+            }, 
+            "id": "5b35d2a76a0af30b2bac3bb4"
+        }, 
+        "AdColony": {
+            "debug": true, 
+            "id": "app3ebe54b74bdb4904b2", 
+            "ads": {
+                "v4vc": {
+                    "v4vc": true, 
+                    "pre_popup": true, 
+                    "zone": "vzc08caa1b720e42228b", 
+                    "post_popup": true
+                }, 
+                "video": {
+                    "v4vc": false, 
+                    "zone": "vz11c82f3d9458447b94"
+                }
+            }
+        }, 
+        "leaderboard": {}
     }, 
     "ios": {
-        "leaderboard": {}, 
+        "UnityAds": {
+            "gameId": "1493044", 
+            "testMode": true
+        }, 
+        "SdkboxAds": {
+            "debug": true, 
+            "units": [
+                "AdColony", 
+                "AdMob", 
+                "InMobi", 
+                "Vungle", 
+                "LeadBolt"
+            ], 
+            "placements": [
+                {
+                    "units": [
+                        {
+                            "unit": "AdColony", 
+                            "name": "video", 
+                            "weight": 30
+                        }, 
+                        {
+                            "unit": "Chartboost", 
+                            "name": "Default", 
+                            "weight": 20
+                        }
+                    ], 
+                    "id": "placement-1", 
+                    "strategy": "weight"
+                }, 
+                {
+                    "units": [
+                        {
+                            "name": "v4vc", 
+                            "unit": "AdColony"
+                        }, 
+                        {
+                            "name": "Level Complete", 
+                            "unit": "Chartboost"
+                        }
+                    ], 
+                    "id": "placement-2", 
+                    "strategy": "round-robin"
+                }, 
+                {
+                    "units": [
+                        {
+                            "name": "gameover", 
+                            "unit": "AdMob"
+                        }
+                    ], 
+                    "id": "placement-admob", 
+                    "strategy": "round-robin"
+                }, 
+                {
+                    "units": [
+                        {
+                            "name": "video", 
+                            "unit": "UnityAds"
+                        }
+                    ], 
+                    "id": "placement-unity", 
+                    "strategy": "round-robin"
+                }
+            ]
+        }, 
         "iap": {
             "items": {
                 "remove_ads": {
@@ -42,7 +306,109 @@
                 }
             }
         }, 
-        "achievement": {}
+        "Appnext": {
+            "debug": true, 
+            "ads": {
+                "default": {
+                    "cache": true, 
+                    "type": "interstitial", 
+                    "id": "6d596bc5-b4c1-48ca-be95-3758fd29a3a5"
+                }
+            }
+        }, 
+        "AdMob": {
+            "ads": {
+                "gameover": {
+                    "type": "interstitial", 
+                    "id": "ca-app-pub-1329374026572143/4185543717"
+                }, 
+                "home": {
+                    "width": 300, 
+                    "type": "banner", 
+                    "id": "ca-app-pub-3940256099942544/2934735716", 
+                    "alignment": "bottom", 
+                    "height": 50
+                }
+            }
+        }, 
+        "LeadBolt": {
+            "api_key": "THi6gjCvO0YHP9Se3yYZODUFC5JLvV8v", 
+            "ads": {
+                "ad2": {
+                    "name": "video"
+                }, 
+                "ad1": {
+                    "name": "inapp"
+                }
+            }
+        }, 
+        "InMobi": {
+            "version": 1, 
+            "account_id": "7c58e3bbe1fd43009bdb87c258679252", 
+            "ads": {
+                "ad2": {
+                    "type": "interstitial", 
+                    "id": "1527423499558"
+                }, 
+                "ad1": {
+                    "width": 300, 
+                    "type": "banner", 
+                    "id": "1526597538630", 
+                    "alignment": "top", 
+                    "height": 50
+                }
+            }
+        }, 
+        "achievement": {}, 
+        "Appodeal": {
+            "app_key": "2cfc9cc638980eb7f5ff35d6eb63dbe404503151ccc451ed"
+        }, 
+        "Vungle": {
+            "id": "5b177cd619829714e5ad6b26", 
+            "ads": {
+                "reward": {
+                    "sound": false, 
+                    "backbutton": false, 
+                    "incentivized": true
+                }, 
+                "video": {
+                    "sound": true, 
+                    "backbutton": true
+                }
+            }
+        }, 
+        "Chartboost": {
+            "signature": "c101ab33e9a3aea9eacd64c06289efe1a49c4747", 
+            "ads": {
+                "Default": {
+                    "type": "interstitial"
+                }, 
+                "Level Complete": {
+                    "type": "rewarded_video"
+                }, 
+                "MoreApp": {
+                    "type": "more_app"
+                }
+            }, 
+            "id": "5b35d2a76a0af30b2bac3bb4"
+        }, 
+        "AdColony": {
+            "debug": true, 
+            "id": "appbdee68ae27024084bb334a", 
+            "ads": {
+                "v4vc": {
+                    "v4vc": true, 
+                    "pre_popup": true, 
+                    "zone": "vzf8e4e97704c4445c87504e", 
+                    "post_popup": true
+                }, 
+                "video": {
+                    "v4vc": false, 
+                    "zone": "vzf8fb4670a60e4a139d01b5"
+                }
+            }
+        }, 
+        "leaderboard": {}
     }, 
     "playphone": {
         "skey": "cb3a212a07a7f93be78413bb522d33098298091c", 
