@@ -2,6 +2,7 @@
 #include "CCLuaEngine.h"
 #include "SimpleAudioEngine.h"
 #include "cocos2d.h"
+
 #include "lua_module_register.h"
 
 
@@ -26,7 +27,14 @@
 #include "PluginIAPLua.hpp"
 #include "PluginIAPLuaHelper.h"
 #endif
-
+#ifdef SDKBOX_ENABLED
+#include "PluginSdkboxAdsLua.hpp"
+#include "PluginSdkboxAdsLuaHelper.h"
+#endif
+#ifdef SDKBOX_ENABLED
+#include "PluginAdMobLua.hpp"
+#include "PluginAdMobLuaHelper.h"
+#endif
 #endif
 
 using namespace CocosDenshion;
@@ -65,6 +73,10 @@ void AppDelegate::initGLContextAttrs()
 static int register_all_packages()
 {
 #ifdef SDKBOX_ENABLED
+    register_all_PluginSdkboxAdsLua(LuaEngine::getInstance()->getLuaStack()->getLuaState());
+    register_all_PluginSdkboxAdsLua_helper(LuaEngine::getInstance()->getLuaStack()->getLuaState());
+#endif
+#ifdef SDKBOX_ENABLED
     register_all_PluginAchievementLua(LuaEngine::getInstance()->getLuaStack()->getLuaState());
     register_all_PluginAchievementLua_helper(LuaEngine::getInstance()->getLuaStack()->getLuaState());
 #endif
@@ -79,6 +91,10 @@ static int register_all_packages()
     register_all_PluginIAPLua_helper(LuaEngine::getInstance()->getLuaStack()->getLuaState());
 #endif
 
+#ifdef SDKBOX_ENABLED
+    register_all_PluginAdMobLua(LuaEngine::getInstance()->getLuaStack()->getLuaState());
+    register_all_PluginAdMobLua_helper(LuaEngine::getInstance()->getLuaStack()->getLuaState());
+#endif
     return 0; //flag for packages manager
 }
 

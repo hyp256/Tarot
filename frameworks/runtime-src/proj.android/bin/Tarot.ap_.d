@@ -692,8 +692,8 @@ C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\asset
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\res\fonts \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\res\Photos \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\res\sdkbox_config.json \
-C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\res\fonts\simhei.ttf \
-C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\res\fonts\STHUPO.TTF \
+C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\res\fonts\arial.ttf \
+C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\res\fonts\junegull rg.ttf \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\res\Photos\14.png \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\res\Photos\Button \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\res\Photos\HelloWorld.png \
@@ -773,6 +773,7 @@ C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\asset
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\src\app\views\Begin\BeginUI.lua \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\src\app\views\Choice\Choice.lua \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\src\app\views\Choice\ChoiceUI.lua \
+C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\src\app\views\End\AdScene.lua \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\src\app\views\End\End.lua \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\src\app\views\End\EndUI.lua \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\src\app\views\End\PlayphoneScene.lua \

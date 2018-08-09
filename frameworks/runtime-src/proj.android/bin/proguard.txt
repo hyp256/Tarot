@@ -1,16 +1,22 @@
-# view AndroidManifest.xml #generated:92
+# view AndroidManifest.xml #generated:38
+-keep class com.google.android.gms.ads.AdActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:107
+-keep class com.jirbo.adcolony.AdColonyFullscreen { <init>(...); }
+
+# view AndroidManifest.xml #generated:93
 -keep class com.playphone.psgn.InstallReferrerReceiver { <init>(...); }
 
-# view AndroidManifest.xml #generated:54
+# view AndroidManifest.xml #generated:55
 -keep class com.playphone.psgn.PSGNProxyActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:49
+# view AndroidManifest.xml #generated:50
 -keep class com.playphone.psgn.PSGNService { <init>(...); }
 
-# view AndroidManifest.xml #generated:61
+# view AndroidManifest.xml #generated:62
 -keep class com.playphone.psgn.android.BillingReceiver { <init>(...); }
 
-# view AndroidManifest.xml #generated:38
+# view AndroidManifest.xml #generated:39
 -keep class com.playphone.psgn.android.BillingService { <init>(...); }
 
 # view AndroidManifest.xml #generated:7
