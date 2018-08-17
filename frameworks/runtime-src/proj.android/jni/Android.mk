@@ -1,5 +1,4 @@
-LOCAL_PATH := $(call \
-my-dir)
+LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
@@ -14,24 +13,44 @@ LOCAL_SRC_FILES := ../../Classes/AppDelegate.cpp \
 hellolua/main.cpp \
 ../../Classes/PluginIAPLua.cpp \
 ../../Classes/PluginIAPLuaHelper.cpp \
-../../Classes/SDKBoxLuaHelper.cpp \
 ../../Classes/PluginLeaderboardLua.cpp \
 ../../Classes/PluginLeaderboardLuaHelper.cpp \
 ../../Classes/PluginAchievementLua.cpp \
-../../Classes/PluginAchievementLuaHelper.cpp
-#../../Classes/anysdk_manual_bindings.cpp \
+../../Classes/PluginAchievementLuaHelper.cpp \
+../../Classes/PluginSdkboxAdsLua.hpp \
+../../Classes/PluginSdkboxAdsLua.cpp \
+../../Classes/PluginSdkboxAdsLuaHelper.cpp \
+../../Classes/PluginSdkboxAdsLuaHelper.h \
+../../Classes/SDKBoxLuaHelper.cpp \
+../../Classes/SDKBoxLuaHelper.h \
+../../Classes/PluginAdMobLua.cpp \
+../../Classes/PluginAdMobLuaHelper.cpp \
+../../Classes/PluginAdColonyLua.cpp \
+../../Classes/PluginAdcolonyLuaHelper.cpp \
+../../Classes/PluginInMobiLua.cpp \
+../../Classes/PluginInMobiLuaHelper.cpp \
+../../Classes/PluginLeadBoltLua.cpp \
+../../Classes/PluginLeadBoltLuaHelper.cpp
+#../../Classes/anysdk_manual_bindings.cpp
 #../../Classes/anysdkbindings.cpp
 
 LOCAL_CPPFLAGS := -DSDKBOX_ENABLED
 LOCAL_LDLIBS := -landroid \
 -llog
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes
+#LOCAL_SHARED_LIBRARIES := libadcolonyso \
+#libjsso
 LOCAL_WHOLE_STATIC_LIBRARIES := PluginIAP \
 sdkbox \
 android_native_app_glue \
 PluginLeaderboard \
 PluginAchievement \
-PluginProtocolStatic 
+PluginProtocolStatic \
+PluginSdkboxAds \
+PluginAdMob \
+PluginAdColony \
+PluginInMobi \
+PluginLeadBolt 
 
 # _COCOS_HEADER_ANDROID_BEGIN
 # _COCOS_HEADER_ANDROID_END
@@ -52,6 +71,11 @@ $(call import-module, ./pluginiap)
 $(call import-module, ./pluginleaderboard)
 $(call import-module, ./pluginachievement)
 $(call import-module,../protocols/android)
+$(call import-module, ./pluginsdkboxads)
+$(call import-module, ./pluginadmob)
+$(call import-module, ./pluginadcolony)
+$(call import-module, ./plugininmobi)
+$(call import-module, ./pluginleadbolt)
 
 # _COCOS_LIB_IMPORT_ANDROID_BEGIN
 # _COCOS_LIB_IMPORT_ANDROID_END

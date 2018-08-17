@@ -1,16 +1,40 @@
-# view AndroidManifest.xml #generated:92
--keep class com.playphone.psgn.InstallReferrerReceiver { <init>(...); }
+# view AndroidManifest.xml #generated:110
+-keep class com.adcolony.sdk.AdColonyAdViewActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:54
--keep class com.playphone.psgn.PSGNProxyActivity { <init>(...); }
+# view AndroidManifest.xml #generated:109
+-keep class com.adcolony.sdk.AdColonyInterstitialActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:49
--keep class com.playphone.psgn.PSGNService { <init>(...); }
-
-# view AndroidManifest.xml #generated:61
--keep class com.playphone.psgn.android.BillingReceiver { <init>(...); }
+# view AndroidManifest.xml #generated:121
+-keep class com.apptracker.android.module.AppModuleActivity { <init>(...); }
 
 # view AndroidManifest.xml #generated:38
+-keep class com.google.android.gms.ads.AdActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:114
+-keep class com.inmobi.commons.core.utilities.uid.ImIdShareBroadCastReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:113
+-keep class com.inmobi.rendering.InMobiAdActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:119
+-keep class com.inmobi.signals.activityrecognition.ActivityRecognitionManager { <init>(...); }
+
+# view AndroidManifest.xml #generated:108
+-keep class com.jirbo.adcolony.AdColonyFullscreen { <init>(...); }
+
+# view AndroidManifest.xml #generated:94
+-keep class com.playphone.psgn.InstallReferrerReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:56
+-keep class com.playphone.psgn.PSGNProxyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:51
+-keep class com.playphone.psgn.PSGNService { <init>(...); }
+
+# view AndroidManifest.xml #generated:63
+-keep class com.playphone.psgn.android.BillingReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:40
 -keep class com.playphone.psgn.android.BillingService { <init>(...); }
 
 # view AndroidManifest.xml #generated:7

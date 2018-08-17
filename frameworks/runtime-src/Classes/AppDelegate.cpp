@@ -2,6 +2,8 @@
 #include "CCLuaEngine.h"
 #include "SimpleAudioEngine.h"
 #include "cocos2d.h"
+
+
 #include "lua_module_register.h"
 
 
@@ -13,7 +15,7 @@
 #if (COCOS2D_DEBUG > 0) //&& (CC_CODE_IDE_DEBUG_SUPPORT > 0)
 #include "runtime/Runtime.h"
 #include "ide-support/RuntimeLuaImpl.h"
-
+//playphone
 #ifdef SDKBOX_ENABLED
 #include "PluginAchievementLua.hpp"
 #include "PluginAchievementLuaHelper.h"
@@ -26,7 +28,28 @@
 #include "PluginIAPLua.hpp"
 #include "PluginIAPLuaHelper.h"
 #endif
-
+#ifdef SDKBOX_ENABLED
+#include "PluginSdkboxAdsLua.hpp"
+#include "PluginSdkboxAdsLuaHelper.h"
+#endif
+#ifdef SDKBOX_ENABLED
+#include "PluginAdMobLua.hpp"
+#include "PluginAdMobLuaHelper.h"
+#endif
+#ifdef SDKBOX_ENABLED
+#include "PluginAdColonyLua.hpp"
+#include "PluginAdColonyLuaHelper.h"
+#endif
+//inmobi
+#ifdef SDKBOX_ENABLED
+#include "PluginInMobiLua.hpp"
+#include "PluginInMobiLuaHelper.h"
+#endif
+//LeadBolt
+#ifdef SDKBOX_ENABLED
+#include "PluginLeadBoltLua.hpp"
+#include "PluginLeadBoltLuaHelper.h"
+#endif
 #endif
 
 using namespace CocosDenshion;
@@ -64,6 +87,12 @@ void AppDelegate::initGLContextAttrs()
 // don't modify or remove this function
 static int register_all_packages()
 {
+
+#ifdef SDKBOX_ENABLED
+    register_all_PluginSdkboxAdsLua(LuaEngine::getInstance()->getLuaStack()->getLuaState());
+    register_all_PluginSdkboxAdsLua_helper(LuaEngine::getInstance()->getLuaStack()->getLuaState());
+#endif
+//playphone
 #ifdef SDKBOX_ENABLED
     register_all_PluginAchievementLua(LuaEngine::getInstance()->getLuaStack()->getLuaState());
     register_all_PluginAchievementLua_helper(LuaEngine::getInstance()->getLuaStack()->getLuaState());
@@ -79,6 +108,24 @@ static int register_all_packages()
     register_all_PluginIAPLua_helper(LuaEngine::getInstance()->getLuaStack()->getLuaState());
 #endif
 
+#ifdef SDKBOX_ENABLED
+    register_all_PluginAdMobLua(LuaEngine::getInstance()->getLuaStack()->getLuaState());
+    register_all_PluginAdMobLua_helper(LuaEngine::getInstance()->getLuaStack()->getLuaState());
+#endif
+#ifdef SDKBOX_ENABLED
+    register_all_PluginAdColonyLua(LuaEngine::getInstance()->getLuaStack()->getLuaState());
+    register_all_PluginAdColonyLua_helper(LuaEngine::getInstance()->getLuaStack()->getLuaState());
+#endif
+//inmobi
+#ifdef SDKBOX_ENABLED
+    register_all_PluginInMobiLua(LuaEngine::getInstance()->getLuaStack()->getLuaState());
+    register_all_PluginInMobiLua_helper(LuaEngine::getInstance()->getLuaStack()->getLuaState());
+#endif
+//LeadBolt
+#ifdef SDKBOX_ENABLED
+    register_all_PluginLeadBoltLua(LuaEngine::getInstance()->getLuaStack()->getLuaState());
+    register_all_PluginLeadBoltLua_helper(LuaEngine::getInstance()->getLuaStack()->getLuaState());
+#endif
     return 0; //flag for packages manager
 }
 

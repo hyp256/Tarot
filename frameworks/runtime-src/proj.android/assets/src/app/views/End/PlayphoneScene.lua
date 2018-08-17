@@ -9,9 +9,12 @@ function PlayphoneScene:onCreate()
     print("Sample Startup")
 
     local label = cc.Label:createWithSystemFont("QUIT", "sans", 32)
+    --local label = cc.Label:createWithSystemFont("AD", "sans", 32)
     local quit = cc.MenuItemLabel:create(label)
     quit:onClicked(function()
         os.exit(0)
+        --package.loaded["End/AdScene"]  = nil
+        --self:getApp():enterScene("End/AdScene")        
     end)
     local size = label:getContentSize()
     local menu = cc.Menu:create(quit)
@@ -25,42 +28,6 @@ end
 function PlayphoneScene:setupTestMenu()
     local winsize = cc.Director:getInstance():getWinSize()
 
-    local menu = cc.Menu:create(
---[[
-        cc.MenuItemLabel:create(cc.Label:createWithSystemFont("load products", "sans", 24)):onClicked(function()
-            sdkbox.IAP:refresh()
-        end),
-        cc.MenuItemLabel:create(cc.Label:createWithSystemFont("restore purchase", "sans", 24)):onClicked(function()
-            sdkbox.IAP.restore();
-        end),
-]]--
-
-        cc.MenuItemLabel:create(cc.Label:createWithSystemFont("update leaderboard random [1,100]", "sans", 24)):onClicked(function()
-            local score = math.random() * 100 + 1
-        --LEVEL_LEADER_BOARD_ID
-            sdkbox.PluginLeaderboard:submitScore(LEVEL_LEADER_BOARD_ID, score)
-        end),
-        cc.MenuItemLabel:create(cc.Label:createWithSystemFont("get leaderboard", "sans", 24)):onClicked(function()
-            sdkbox.PluginLeaderboard:getLeaderboard(LEVEL_LEADER_BOARD_ID)
-        end),
-        cc.MenuItemLabel:create(cc.Label:createWithSystemFont("achievement test", "sans", 24)):onClicked(function()
-        --SOLDIER_ACHIEVEMENT_ID
-            sdkbox.PluginAchievement:unlock(SOLDIER_ACHIEVEMENT_ID)
-        end)
-    )
-    print("=============================================2")
-    menu:setPosition(winsize.width / 2, winsize.height - 140)
-    menu:alignItemsVerticallyWithPadding(50)
-    self:addChild(menu)
-
---[[
-    local txtCoin = cc.Label:createWithSystemFont("0", "sans", 24)
-    txtCoin:setPosition(winsize.width / 2, 120)
-    self:addChild(txtCoin)
-]]--
-
-    print("=============================================3")
---[[
     local menuIAP = cc.Menu:create()
     self:addChild(menuIAP)
     sdkbox.IAP:init()
@@ -101,7 +68,6 @@ function PlayphoneScene:setupTestMenu()
             print("unknown event ", args.event)
         end
     end)
-]]--
 
     print("=============================================4")
     sdkbox.PluginAchievement:init()
@@ -115,6 +81,42 @@ function PlayphoneScene:setupTestMenu()
             end
         end)
     print("=============================================5")
+
+--[[
+    local menu = cc.Menu:create(
+        cc.MenuItemLabel:create(cc.Label:createWithSystemFont("load products", "sans", 24)):onClicked(function()
+            sdkbox.IAP:refresh()
+        end),
+        cc.MenuItemLabel:create(cc.Label:createWithSystemFont("restore purchase", "sans", 24)):onClicked(function()
+            sdkbox.IAP.restore();
+        end),
+
+        cc.MenuItemLabel:create(cc.Label:createWithSystemFont("update leaderboard random [1,100]", "sans", 24)):onClicked(function()
+            local score = math.random() * 100 + 1
+        --LEVEL_LEADER_BOARD_ID
+            local string = sdkbox.PluginLeaderboard:getLeaderboard(LEVEL_LEADER_BOARD_ID)
+        end),
+        cc.MenuItemLabel:create(cc.Label:createWithSystemFont("get leaderboard", "sans", 24)):onClicked(function()
+            sdkbox.PluginLeaderboard:getLeaderboard(LEVEL_LEADER_BOARD_ID)
+        end),
+        cc.MenuItemLabel:create(cc.Label:createWithSystemFont("achievement test", "sans", 24)):onClicked(function()
+        --SOLDIER_ACHIEVEMENT_ID
+            sdkbox.PluginAchievement:unlock(SOLDIER_ACHIEVEMENT_ID)
+        end)
+    )
+    print("=============================================2")
+    menu:setPosition(winsize.width / 2, winsize.height - 140)
+    menu:alignItemsVerticallyWithPadding(50)
+    self:addChild(menu)
+
+    local txtCoin = cc.Label:createWithSystemFont("0", "sans", 24)
+    txtCoin:setPosition(winsize.width / 2, 120)
+    self:addChild(txtCoin)
+]]--
+
+    sdkbox.PluginAchievement:unlock(SOLDIER_ACHIEVEMENT_ID)
+    sdkbox.PluginLeaderboard:getLeaderboard(LEVEL_LEADER_BOARD_ID)
+    print("=============================================3")
 end
 
 return PlayphoneScene
