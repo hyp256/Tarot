@@ -54,9 +54,8 @@ function Begin:regDivineMenu()
     UI:getMenuItem("divineLifeItem"):addTouchEventListener(DivineLife)
     UI:getMenuItem("divineEnterpriseItem"):addTouchEventListener(DivineEnterprise)
     UI:getMenuItem("divineLoveItem"):addTouchEventListener(DivineLove)
-end
- 
- 
+end 
+
     self:regDivineMenu()
 end
 

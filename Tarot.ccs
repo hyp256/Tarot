@@ -54,6 +54,9 @@
           <Image Name="HelloWorld.png" />
           <Image Name="TAROTBACKGROUND.jpg" />
           <Image Name="TAROTWELCOME.jpg" />
+          <Image Name="TAROTWELCOME.png" />
+          <Image Name="TAROTWELCOMECIRCLE.png" />
+          <Image Name="TAROTWELCOMETIRANGLE.png" />
         </Folder>
         <Project Name="Answer.csd" Type="Scene" />
         <Project Name="Begin.csd" Type="Scene" />

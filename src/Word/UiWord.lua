@@ -6,18 +6,18 @@
     UI_LAYERZORDER_MENU = 4    
 --Begin.lua
    Ui_Begin_Button = {
-                       ["Ui_Begin_Button_Life"] = "生活",
-                       ["Ui_Begin_Button_EnterPrise"] = "事业",
-                       ["Ui_Begin_Button_Love"] = "爱情"
+                       ["Ui_Begin_Button_Life"] = "LIFE",
+                       ["Ui_Begin_Button_EnterPrise"] = "ENTERPRISE",
+                       ["Ui_Begin_Button_Love"] = "LOVE"
    }
 
 --Shuffle.lua
    Ui_Shuffle_Button = {
-                       ["Ui_Shuffle_Button_Top"] = "上",
-                       ["Ui_Shuffle_Button_Center"] = "中",
-                       ["Ui_Shuffle_Button_Bottom"] = "下",
-                       ["Ui_Shuffle_Button_Next"] = "下一步洗牌",
-                       ["Ui_Shuffle_Button_end"] = "洗牌结束"
+                       ["Ui_Shuffle_Button_Top"] = "TOP",
+                       ["Ui_Shuffle_Button_Center"] = "CENTER",
+                       ["Ui_Shuffle_Button_Bottom"] = "BOTTOM",
+                       ["Ui_Shuffle_Button_Next"] = "SHUFFLE NEXT",
+                       ["Ui_Shuffle_Button_end"] = "SHUFFLE END"
    }
     
     UI_BUTTON_STATE_NORMAL_BEFORECALLBACK = 1000
@@ -27,24 +27,24 @@
 
 --Choice.lua
    Ui_Choice_Button = {
-                       ["Ui_Choice_Button_end"] = "抽牌结束"
+                       ["Ui_Choice_Button_end"] = "CHOICE END"
    }
 
 --Answer.lua
    Ui_Answer_Button = {
-                       ["Ui_Answer_Button_end"] = "下一张",
+                       ["Ui_Answer_Button_end"] = "NEXT CARD",
 
-                       ["Ui_Answer5_Button_end"] = "结束"
+                       ["Ui_Answer5_Button_end"] = "END"
    }
 
 --End.lua
    Ui_End_Button = {
-                       ["Ui_End_Button_Back"] = "再次看牌",
+                       ["Ui_End_Button_Back"] = "WATCH CARDS AGAIN",
 
-                       ["Ui_End_Button_Again"] = "重新开始",
+                       ["Ui_End_Button_Again"] = "GAME AGAIN",
 
-                       ["Ui_End_Button_Exit"] = "退出游戏",
+                       ["Ui_End_Button_Exit"] = "GAME OVER",
 
-                       ["Ui_End_Button_Share"] = "分享游戏"
+                       ["Ui_End_Button_Share"] = "SHARE"
    }
 end

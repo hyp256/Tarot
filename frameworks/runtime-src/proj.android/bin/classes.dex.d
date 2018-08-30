@@ -126,11 +126,6 @@ C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\bin\c
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\bin\classes\org\cocos2dx\Tarot\BuildConfig.class \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\bin\classes\org\cocos2dx\Tarot\R$attr.class \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\bin\classes\org\cocos2dx\Tarot\R$drawable.class \
-C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\bin\classes\org\cocos2dx\Tarot\R$id.class \
-C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\bin\classes\org\cocos2dx\Tarot\R$layout.class \
-C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\bin\classes\org\cocos2dx\Tarot\R$mipmap.class \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\bin\classes\org\cocos2dx\Tarot\R$string.class \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\bin\classes\org\cocos2dx\Tarot\R.class \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\bin\dexedLibs\android-async-http-1.4.8-c6bed47cb836cb6e9099106e0c03f54c.jar \
-C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\bin\dexedLibs\libPluginProtocol-039738c9104f924f73abe3fece1ad5dd.jar \
-C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\bin\dexedLibs\PSGN.3.0.2.504-143226b66671226c6bf61113886369bf.jar \

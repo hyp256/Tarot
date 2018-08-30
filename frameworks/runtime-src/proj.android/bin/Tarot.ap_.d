@@ -1,37 +1,24 @@
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\bin\Tarot.ap_ \
- : C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\res\drawable\plugin_btn_close.png \
-C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\res\drawable\plugin_ui_ad.png \
-C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\res\drawable-hdpi\icon.png \
+ : C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\res\drawable-hdpi\icon.png \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\res\drawable-ldpi\icon.png \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\res\drawable-mdpi\icon.png \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\res\drawable-xhdpi\icon.png \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\res\drawable-xxhdpi\icon.png \
-C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\res\layout\plugin_ads.xml \
-C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\res\layout\plugin_login.xml \
-C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\res\mipmap\plugin_ads.xml \
-C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\res\mipmap\plugin_btn_close.png \
-C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\res\mipmap\plugin_login.xml \
-C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\res\mipmap\plugin_ui_ad.png \
-C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\res\values\plugin_string.xml \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\res\values\strings.xml \
-C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\res\values-en\plugin_string.xml \
-C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\bin\res\drawable\plugin_btn_close.png \
-C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\bin\res\drawable\plugin_ui_ad.png \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\bin\res\drawable-hdpi\icon.png \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\bin\res\drawable-ldpi\icon.png \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\bin\res\drawable-mdpi\icon.png \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\bin\res\drawable-xhdpi\icon.png \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\bin\res\drawable-xxhdpi\icon.png \
-C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\bin\res\mipmap\plugin_btn_close.png \
-C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\bin\res\mipmap\plugin_ui_ad.png \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\config.json \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\res \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\src \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\res\background.mp3 \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\res\fonts \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\res\Photos \
-C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\res\fonts\simhei.ttf \
-C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\res\fonts\STHUPO.TTF \
+C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\res\sdkbox_config.json \
+C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\res\fonts\arial.ttf \
+C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\res\fonts\junegull rg.ttf \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\res\Photos\14.png \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\res\Photos\Button \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\res\Photos\HelloWorld.png \
@@ -111,8 +98,10 @@ C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\asset
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\src\app\views\Begin\BeginUI.lua \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\src\app\views\Choice\Choice.lua \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\src\app\views\Choice\ChoiceUI.lua \
+C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\src\app\views\End\AdScene.lua \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\src\app\views\End\End.lua \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\src\app\views\End\EndUI.lua \
+C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\src\app\views\End\PlayphoneScene.lua \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\src\app\views\Shuffle\Shuffle1.lua \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\src\app\views\Shuffle\Shuffle1UI.lua \
 C:\Users\Administrator\MyLuaGame\Tarot\frameworks\runtime-src\proj.android\assets\src\app\views\Shuffle\Shuffle2.lua \

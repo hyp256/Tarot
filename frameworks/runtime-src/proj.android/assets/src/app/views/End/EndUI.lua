@@ -50,7 +50,7 @@ local function initUI()
 
         --Create scrollView_Aside
         local scrollView_Aside = ccui.ScrollView:create()
-        scrollView_Aside:setInnerContainerSize({width = 768, height = 255})
+        scrollView_Aside:setInnerContainerSize({width = 768, height = 320})
         scrollView_Aside:ignoreContentAdaptWithSize(false)
         scrollView_Aside:setClippingEnabled(true)
         scrollView_Aside:setBackGroundColorType(1)
@@ -81,7 +81,7 @@ local function initUI()
         --Create label_Aside
         local label_Aside = ccui.Text:create()
         label_Aside:ignoreContentAdaptWithSize(false)
-        label_Aside:setFontName("fonts/simhei.ttf")
+        label_Aside:setFontName("fonts/arial.ttf")
         label_Aside:setFontSize(36)
         label_Aside:setString(Aside_End["Aside_End"])
         label_Aside:setLayoutComponentEnabled(true)
@@ -99,7 +99,7 @@ local function initUI()
         layout:setPercentHeightEnabled(true)
         layout:setPercentWidth(1.0000)
         layout:setPercentHeight(1.0000)
-        layout:setSize({width = 768.0000, height = 256.0000})
+        layout:setSize({width = 768.0000, height = 320.0000})
         scrollView_Aside:addChild(label_Aside)
 
         --Create menuPanel
@@ -135,7 +135,7 @@ local function initUI()
         exitItem:loadTextureNormal("Photos/Button/3DBUTTONLARGE_NORMAL.png",0)
         exitItem:loadTexturePressed("Photos/Button/3DBUTTONLARGE_SELECTED.png",0)
         exitItem:loadTextureDisabled("Default/Button_Disable.png",0)
-        exitItem:setTitleFontName("fonts/STHUPO.TTF")
+        exitItem:setTitleFontName("fonts/junegull rg.ttf")
         exitItem:setTitleFontSize(48)
         exitItem:setTitleText(Ui_End_Button["Ui_End_Button_Exit"])
         exitItem:setScale9Enabled(true)
@@ -166,7 +166,7 @@ local function initUI()
         backToBeginItem:loadTextureNormal("Photos/Button/3DBUTTONLARGE_NORMAL.png",0)
         backToBeginItem:loadTexturePressed("Photos/Button/3DBUTTONLARGE_SELECTED.png",0)
         backToBeginItem:loadTextureDisabled("Default/Button_Disable.png",0)
-        backToBeginItem:setTitleFontName("fonts/STHUPO.TTF")
+        backToBeginItem:setTitleFontName("fonts/junegull rg.ttf")
         backToBeginItem:setTitleFontSize(48)
         backToBeginItem:setTitleText(Ui_End_Button["Ui_End_Button_Again"])
         backToBeginItem:setScale9Enabled(true)
@@ -197,7 +197,7 @@ local function initUI()
         backToAnswer1Item:loadTextureNormal("Photos/Button/3DBUTTONLARGE_NORMAL.png",0)
         backToAnswer1Item:loadTexturePressed("Photos/Button/3DBUTTONLARGE_SELECTED.png",0)
         backToAnswer1Item:loadTextureDisabled("Default/Button_Disable.png",0)
-        backToAnswer1Item:setTitleFontName("fonts/STHUPO.TTF")
+        backToAnswer1Item:setTitleFontName("fonts/junegull rg.ttf")
         backToAnswer1Item:setTitleFontSize(48)
         backToAnswer1Item:setTitleText(Ui_End_Button["Ui_End_Button_Back"])
         backToAnswer1Item:setScale9Enabled(true)
@@ -227,7 +227,7 @@ local function initUI()
         shareItem:loadTextureNormal("Photos/Button/3DBUTTONLARGE_NORMAL.png",0)
         shareItem:loadTexturePressed("Photos/Button/3DBUTTONLARGE_SELECTED.png",0)
         shareItem:loadTextureDisabled("Default/Button_Disable.png",0)
-        shareItem:setTitleFontName("fonts/STHUPO.TTF")
+        shareItem:setTitleFontName("fonts/junegull rg.ttf")
         shareItem:setTitleFontSize(48)
         shareItem:setTitleText(Ui_End_Button["Ui_End_Button_Share"])
         shareItem:setScale9Enabled(true)
@@ -307,6 +307,9 @@ function EndUI:getMenuItem(args)
         return backToBeginItem
     elseif (args == "backToAnswer1Item") then
         return backToAnswer1Item
+    elseif (args == "shareItem") then
+        return shareItem
+
     end
 end
 
