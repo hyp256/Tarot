@@ -251,6 +251,7 @@ local function initUI()
         layout:setTopMargin(466.8000)
         layout:setBottomMargin(-22.8000)
         menuPanel:addChild(shareItem)
+        shareItem:setVisible(false)
 
     end
 

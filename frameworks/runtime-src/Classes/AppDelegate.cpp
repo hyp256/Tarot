@@ -2,6 +2,18 @@
 #include "CCLuaEngine.h"
 #include "SimpleAudioEngine.h"
 #include "cocos2d.h"
+#ifdef SDKBOX_ENABLED
+#include "PluginAdColonyLua.hpp"
+#include "PluginAdColonyLuaHelper.h"
+#endif
+#ifdef SDKBOX_ENABLED
+#include "PluginChartboostLua.hpp"
+#include "PluginChartboostLuaHelper.h"
+#endif
+#ifdef SDKBOX_ENABLED
+#include "PluginSdkboxAdsLua.hpp"
+#include "PluginSdkboxAdsLuaHelper.h"
+#endif
 #include "lua_module_register.h"
 
 #if (CC_TARGET_PLATFORM != CC_PLATFORM_LINUX)
@@ -48,6 +60,18 @@ void AppDelegate::initGLContextAttrs()
 // don't modify or remove this function
 static int register_all_packages()
 {
+#ifdef SDKBOX_ENABLED
+    register_all_PluginAdColonyLua(LuaEngine::getInstance()->getLuaStack()->getLuaState());
+    register_all_PluginAdColonyLua_helper(LuaEngine::getInstance()->getLuaStack()->getLuaState());
+#endif
+#ifdef SDKBOX_ENABLED
+    register_all_PluginChartboostLua(LuaEngine::getInstance()->getLuaStack()->getLuaState());
+    register_all_PluginChartboostLua_helper(LuaEngine::getInstance()->getLuaStack()->getLuaState());
+#endif
+#ifdef SDKBOX_ENABLED
+    register_all_PluginSdkboxAdsLua(LuaEngine::getInstance()->getLuaStack()->getLuaState());
+    register_all_PluginSdkboxAdsLua_helper(LuaEngine::getInstance()->getLuaStack()->getLuaState());
+#endif
     return 0; //flag for packages manager
 }
 

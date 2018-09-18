@@ -6,14 +6,34 @@ LOCAL_MODULE := cocos2dlua_shared
 
 LOCAL_MODULE_FILENAME := libcocos2dlua
 
-LOCAL_SRC_FILES := \
-../../Classes/AppDelegate.cpp \
+LOCAL_SRC_FILES := ../../Classes/AppDelegate.cpp \
 ../../Classes/ide-support/SimpleConfigParser.cpp \
 ../../Classes/ide-support/RuntimeLuaImpl.cpp \
 ../../Classes/ide-support/lua_debugger.c \
-hellolua/main.cpp
+hellolua/main.cpp \
+../../Classes/PluginSdkboxAdsLua.hpp \
+../../Classes/PluginSdkboxAdsLua.cpp \
+../../Classes/PluginSdkboxAdsLuaHelper.cpp \
+../../Classes/PluginSdkboxAdsLuaHelper.h \
+../../Classes/SDKBoxLuaHelper.h \
+../../Classes/SDKBoxLuaHelper.cpp \
+../../Classes/PluginChartboostLua.cpp \
+../../Classes/PluginChartboostLua.hpp \
+../../Classes/PluginChartboostLuaHelper.cpp \
+../../Classes/PluginChartboostLuaHelper.h \
+../../Classes/PluginAdColonyLua.cpp \
+../../Classes/PluginAdcolonyLuaHelper.cpp
 
+LOCAL_CPPFLAGS := -DSDKBOX_ENABLED
+LOCAL_LDLIBS := -landroid \
+-llog
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes
+LOCAL_SHARED_LIBRARIES := libadcolonyso \
+libjsso
+LOCAL_WHOLE_STATIC_LIBRARIES := PluginSdkboxAds \
+sdkbox \
+PluginChartboost \
+PluginAdColony
 
 # _COCOS_HEADER_ANDROID_BEGIN
 # _COCOS_HEADER_ANDROID_END
@@ -25,9 +45,14 @@ LOCAL_STATIC_LIBRARIES += cocos2d_simulator_static
 # _COCOS_LIB_ANDROID_END
 
 include $(BUILD_SHARED_LIBRARY)
+$(call import-add-path, $(LOCAL_PATH))
 
 $(call import-module,scripting/lua-bindings/proj.android/prebuilt-mk)
 $(call import-module,tools/simulator/libsimulator/proj.android/prebuilt-mk)
+$(call import-module, ./sdkbox)
+$(call import-module, ./pluginsdkboxads)
+$(call import-module, ./pluginchartboost)
+$(call import-module, ./pluginadcolony)
 
 # _COCOS_LIB_IMPORT_ANDROID_BEGIN
 # _COCOS_LIB_IMPORT_ANDROID_END

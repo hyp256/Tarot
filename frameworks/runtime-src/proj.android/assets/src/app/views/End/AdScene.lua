@@ -26,11 +26,12 @@ function AdScene:setupTestMenu()
         dump(args)
     end)
 
+--[[
     sdkbox.PluginSdkboxAds:cacheControl("LeadBolt", {name = "ad1"})
     sdkbox.PluginSdkboxAds:cacheControl("LeadBolt", {name = "ad2"})
     sdkbox.PluginSdkboxAds:cacheControl("InMobi", {name = "ad1"})
     sdkbox.PluginSdkboxAds:cacheControl("InMobi", {name = "ad2"})
---[[
+
     sdkbox.PluginLeadBolt:init()
     sdkbox.PluginLeadBolt:setListener(function(args)
         dump(args)

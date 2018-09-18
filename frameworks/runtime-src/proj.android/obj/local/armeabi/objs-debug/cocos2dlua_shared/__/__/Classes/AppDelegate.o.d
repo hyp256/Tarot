@@ -359,6 +359,12 @@ obj/local/armeabi/objs-debug/cocos2dlua_shared/__/__/Classes/AppDelegate.o: \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//scripting/lua-bindings/proj.android/prebuilt-mk/../../manual/Lua-BindingsExport.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//audio/android/prebuilt-mk/../../include/SimpleAudioEngine.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//audio/android/prebuilt-mk/../../include/Export.h \
+ jni/../../Classes/PluginAdColonyLua.hpp \
+ jni/../../Classes/PluginAdColonyLuaHelper.h \
+ jni/../../Classes/PluginChartboostLua.hpp \
+ jni/../../Classes/PluginChartboostLuaHelper.h \
+ jni/../../Classes/PluginSdkboxAdsLua.hpp \
+ jni/../../Classes/PluginSdkboxAdsLuaHelper.h \
  jni/../../Classes/lua_module_register.h \
  D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//scripting/lua-bindings/proj.android/prebuilt-mk/../../manual/Lua-BindingsExport.h \
  jni/../../Classes/ide-support/CodeIDESupport.h
@@ -1082,6 +1088,18 @@ D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//scripting/lua-bindings/proj
 D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//audio/android/prebuilt-mk/../../include/SimpleAudioEngine.h:
 
 D:\programming\Cocos\Cocos2d-x/cocos2d-x-3.10/cocos//audio/android/prebuilt-mk/../../include/Export.h:
+
+jni/../../Classes/PluginAdColonyLua.hpp:
+
+jni/../../Classes/PluginAdColonyLuaHelper.h:
+
+jni/../../Classes/PluginChartboostLua.hpp:
+
+jni/../../Classes/PluginChartboostLuaHelper.h:
+
+jni/../../Classes/PluginSdkboxAdsLua.hpp:
+
+jni/../../Classes/PluginSdkboxAdsLuaHelper.h:
 
 jni/../../Classes/lua_module_register.h:
 

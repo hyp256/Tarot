@@ -7,7 +7,7 @@ local End = class("End", cc.load("mvc").ViewBase)
 --local PlayphoneScene = require "End/PlayphoneScene"
 
 --加载AdScene类
---local AdScene = require "End/AdScene"
+local AdScene = require "End/AdScene"
 
 --加载UI类,教程建议用import,用require一样
 local EndUI = require "End/EndUI"
@@ -21,8 +21,8 @@ function End:onCreate()
     --local Playphone = PlayphoneScene:create()
     --Playphone:addTo(self)
 
-    --local Ad = AdScene:create()
-    --Ad:addTo(self)
+    local Ad = AdScene:create()
+    Ad:addTo(self)
 
     --banner广告
     --print("play placement-banner")
@@ -34,7 +34,7 @@ function End:onCreate()
             if type == ccui.TouchEventType.ended then
                 --重看广告
                 print("play placement-interstitial")
-                --sdkbox.PluginSdkboxAds:placement("placement-interstitial")
+                sdkbox.PluginSdkboxAds:placement("placement-interstitial")
                 --sdkbox.PluginSdkboxAds:hide("placement-banner")
 
                 self:getApp():enterScene("Answer/Answer1")
@@ -45,7 +45,7 @@ function End:onCreate()
             if type == ccui.TouchEventType.ended then
                 --重玩广告
                 print("play placement-reward")
-                --sdkbox.PluginSdkboxAds:placement("placement-reward")
+                sdkbox.PluginSdkboxAds:placement("placement-reward")
                 --sdkbox.PluginSdkboxAds:hide("placement-banner")
 
                 self:getApp():enterScene("Begin/Begin")
